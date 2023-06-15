@@ -2,6 +2,12 @@
     import Icon from "svelte-icons-pack";
     import IoSunny from "svelte-icons-pack/io/IoSunny";
 </script>
-<div class="rounded-full bg-red-500 w-12 p-2">
-    <Icon src={IoSunny} size="2rem" color="#FDAC35" />
+<div class="switch rounded-full w-8 h-8">
+    
 </div>
+
+<style>
+    .switch {
+        background-color: #D4815D;
+    }
+</style>

@@ -5,10 +5,10 @@
     </div>
     <div class="">
         <ul class=" mt-2 text-lg font-bold flex gap-10">
-            <li><a class="hover:underline" href="#home">Home</a></li>
-            <li><a class="hover:underline" href="#about">About Me</a></li>
-            <li><a class="hover:underline" href="#projects">Projects</a></li>
-            <li><a class="hover:underline" href="#contact">Contact</a></li>
+            <li><a class="hover:border-b-4 border-black" href="#home">Home</a></li>
+            <li><a class="hover:border-b-4 border-black" href="#about">About Me</a></li>
+            <li><a class="hover:border-b-4 border-black" href="#projects">Projects</a></li>
+            <li><a class="hover:border-b-4 border-black" href="#contact">Contact</a></li>
         </ul>
     </div>
 </div>
