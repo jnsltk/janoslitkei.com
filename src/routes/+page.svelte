@@ -1,5 +1,6 @@
 <script>
 	import About from "../lib/About.svelte";
+	import Contact from "../lib/Contact.svelte";
     import Header from "../lib/Header.svelte";
 	import Hero from "../lib/Hero.svelte";
 	import Projects from "../lib/Projects.svelte";
@@ -15,5 +16,6 @@
         <Hero />
         <About />
         <Projects />
+        <Contact />
     </div>
 </div>
