@@ -1,4 +1,4 @@
-<div class="fixed top-0 left-0 right-0 pt-12 mx-16 flex justify-between z-20 bg-gradient-to-b from-light-bg-300 from-85% to-[rgba(0,0,0,0)]">
+<div class="fixed top-0 left-0 right-0 pt-12 mx-16 flex justify-between z-20">
     <div class="">
         <h1 class="text-4xl font-display mb-4">Janos Litkei</h1>
         
