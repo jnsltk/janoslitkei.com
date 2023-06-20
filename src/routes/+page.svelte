@@ -1,5 +1,6 @@
 <script>
 	import About from "../lib/About.svelte";
+	import Background from "../lib/Background.svelte";
 	import Contact from "../lib/Contact.svelte";
     import Header from "../lib/Header.svelte";
 	import Hero from "../lib/Hero.svelte";
@@ -9,6 +10,7 @@
 </script>
 
 <div>
+    <Background />
     <Header />
     <Sidebar />
 

@@ -4,7 +4,7 @@
         
     </div>
     <div class="">
-        <ul class=" mt-2 text-base font-semibold flex gap-10">
+        <ul class=" mt-2 text-base font-semibold flex gap-10 ">
             <li><a class="hover:border-b-4 border-black" href="#home">Home</a></li>
             <li><a class="hover:border-b-4 border-black" href="#about">About Me</a></li>
             <li><a class="hover:border-b-4 border-black" href="#projects">Projects</a></li>
@@ -12,9 +12,3 @@
         </ul>
     </div>
 </div>
-
-<style>
-    div {
-        background-color: #EEE7D8;
-    }
-</style>

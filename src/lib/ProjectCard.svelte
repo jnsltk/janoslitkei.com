@@ -14,7 +14,7 @@
     if (!link) link = github;
 </script>
 
-<div class="max-w-sm rounded-xl overflow-hidden shadow-xl mb-8 flex flex-col">
+<div class="max-w-sm rounded-xl overflow-hidden shadow-xl mb-8 flex flex-col bg-light-bg-300 opacity-90">
     <a href={link}><img src={img} alt={desc} class="w-full border-b border-gray-500"></a>
     <div class="px-8 py-6">
         <div class="font-semibold text-base mb-2"><a href={link}>{title}</a></div>
