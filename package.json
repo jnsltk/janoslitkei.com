@@ -28,6 +28,7 @@
 		"@fontsource/inter": "^5.0.2",
 		"svelte-canvas": "^0.9.3",
 		"svelte-icons-pack": "^2.1.0",
-		"svelte-transition": "^0.0.8"
+		"svelte-transition": "^0.0.8",
+		"tailwindcss-animated": "^1.0.1"
 	}
 }
