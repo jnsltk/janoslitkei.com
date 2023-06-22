@@ -11,7 +11,7 @@
 <div class="fixed top-32 ml-16 w-auto flex flex-col z-20">
     
     <div class="mr-auto">
-        <img class="rounded-full w-60 mr-auto mb-6" src="{jan}" alt="Me, Janos Litkei">
+        <img class="rounded-full w-52 mr-auto mb-6" src="{jan}" alt="Me, Janos Litkei">
         <div class="flex justify-center gap-6 ml-auto mr-auto">
             <a href="https://github.com/jnsltk" target="_blank"><Icon src="{AiFillGithub}" size="1.75em" /></a>
             <a href="https://www.linkedin.com/in/janoslitkei/" target="_blank"><Icon src="{AiFillLinkedin}" size="1.75em" /></a>
