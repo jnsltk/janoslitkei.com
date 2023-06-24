@@ -14,7 +14,7 @@
     <Header />
     <Sidebar />
 
-    <div class="ml-80 h-screen snap-always snap-mandatory snap-y overflow-y-auto">
+    <div class="ml-72 h-screen snap-always snap-mandatory snap-y overflow-y-auto">
         <Hero />
         <About />
         <Projects />
