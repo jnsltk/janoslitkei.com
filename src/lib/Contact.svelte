@@ -8,20 +8,20 @@
                     <label class="block tracking-wide text-xs font-bold mb-2" for="grid-name">
                         Name
                     </label>
-                    <input class=" backdrop-blur-md block w-full bg-light-bg-500/50 placeholder:text-gray-600 text-xs rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-light-bg-100/50" id="grid-name" type="text" placeholder="Your Name...">
+                    <input class="shadow-md backdrop-blur-md block w-full bg-light-bg-300/50 placeholder:text-gray-600 text-xs rounded py-3 px-4 mb-3 leading-tight focus:outline-none border border-light-bg-500 focus:bg-light-bg-100/50 focus:border-smoky-black focus:ring-smoky-black" id="grid-name" type="text" placeholder="Your Name...">
                 </div>
                 <div class="w-full px-3">
                     <label class="block tracking-wide text-xs font-bold mb-2" for="grid-email">
                         Email
                     </label>
-                    <input class=" backdrop-blur-md block w-full bg-light-bg-500/50 placeholder:text-gray-600 text-xs rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-light-bg-100/50" id="grid-email" type="text" placeholder="Your Email adress...">
+                    <input class=" shadow-md backdrop-blur-md block w-full bg-light-bg-300/50 placeholder:text-gray-600 text-xs rounded py-3 px-4 mb-3 leading-tight focus:outline-none border border-light-bg-500 focus:bg-light-bg-100/50 focus:border-smoky-black focus:ring-smoky-black" id="grid-email" type="text" placeholder="Your Email adress...">
                 </div>
             </div>
             <div class="w-full pb-5">
                 <label class="block tracking-wide text-xs font-bold mb-2" for="grid-message">
                     Message
                 </label>
-                <textarea class=" backdrop-blur-md block w-full bg-light-bg-500/50 placeholder:text-gray-600 text-xs rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-light-bg-100/50" name="Message" id="grid-message" cols="30" rows="15" placeholder="Type your message here..."></textarea>
+                <textarea class="shadow-md backdrop-blur-md block w-full bg-light-bg-300/50 placeholder:text-gray-600 text-xs rounded py-3 px-4 mb-3 leading-tight focus:outline-none border border-light-bg-500 focus:bg-light-bg-100/50 focus:border-smoky-black focus:ring-smoky-black" name="Message" id="grid-message" cols="30" rows="15" placeholder="Type your message here..."></textarea>
             </div>
             <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-gray-100 rounded-lg bg-gray-900 hover:bg-accent-orange focus:ring-4 focus:outline-none focus:ring-primary-300 ">Send message</button>
         </form>
