@@ -6,7 +6,7 @@
     export let content;
 </script>
 
-<div class="w-[48rem] h-[28rem] mr-[24rem] rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out mb-8 bg-light-bg-300/50 backdrop-blur-md">
+<div class="w-[48rem] h-[28rem] mr-[24rem] rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out bg-light-bg-300/50 backdrop-blur-md">
     <div class="px-10 py-8 flex flex-wrap">    
         <h2 class="font-semibold font-display text-xl my-2 ">Other projects</h2>
         <p class="mb-4">Some other personal and university projects I've worked on that might be worth mentioning.</p>
