@@ -14,7 +14,7 @@
     if (!link) link = github;
 </script>
 
-<div class=" w-[24rem] h-[28rem] rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out mb-8 flex flex-col bg-light-bg-300/50 backdrop-blur-md z-50">
+<div class=" w-[24rem] h-[28rem] rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out flex flex-col bg-light-bg-300/50 backdrop-blur-md z-50">
     <a href={link}><img src={img} alt={desc} class="w-full"></a>
     <div class="px-8 py-6">
         <div class="font-semibold text-base mb-2"><a href={link}>{title}</a></div>

@@ -21,7 +21,7 @@
                 <label class="block tracking-wide text-xs font-bold mb-2" for="grid-message">
                     Message
                 </label>
-                <textarea class="shadow-md backdrop-blur-md block w-full bg-light-bg-300/50 placeholder:text-gray-600 text-xs rounded py-3 px-4 mb-3 leading-tight focus:outline-none border border-light-bg-500 focus:bg-light-bg-100/50 focus:border-smoky-black focus:ring-smoky-black" name="Message" id="grid-message" cols="30" rows="15" placeholder="Type your message here..."></textarea>
+                <textarea class="shadow-md backdrop-blur-md block w-full bg-light-bg-300/50 placeholder:text-gray-600 text-xs rounded resize-none py-3 px-4 mb-3 leading-tight focus:outline-none border border-light-bg-500 focus:bg-light-bg-100/50 focus:border-smoky-black focus:ring-smoky-black" name="Message" id="grid-message" cols="30" rows="15" placeholder="Type your message here..."></textarea>
             </div>
             <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-gray-100 rounded-lg bg-gray-900 hover:bg-accent-orange focus:ring-4 focus:outline-none focus:ring-primary-300 ">Send message</button>
         </form>
