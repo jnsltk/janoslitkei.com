@@ -62,17 +62,17 @@
     <Header />
     <Sidebar />
 
-    <div bind:this={container} on:scroll={scrollHandler} class="ml-72 h-screen snap-always snap-mandatory snap-y overflow-y-auto">
-        <section bind:this={heroSection} class="sticky top-0 will-change-transform">
+    <div bind:this={container} on:scroll={scrollHandler} class=" relative ml-72 h-screen snap-always snap-mandatory snap-y overflow-y-auto">
+        <section bind:this={heroSection} class="sticky top-0 will-change-transform z-50">
             <Hero />
         </section>
-        <section bind:this={aboutSection} class="sticky top-0 will-change-transform">
+        <section bind:this={aboutSection} class="sticky top-0 will-change-transform z-50">
             <About />
         </section>
-        <section bind:this={projectsSection} class="sticky top-0 will-change-transform">
+        <section bind:this={projectsSection} class="sticky top-0 will-change-transform z-50">
             <Projects />
         </section>
-        <section bind:this={contactSection} class="sticky top-0 will-change-transform">
+        <section bind:this={contactSection} class="sticky top-0 will-change-transform z-50">
             <Contact />
         </section>
     </div>
