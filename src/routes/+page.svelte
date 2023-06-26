@@ -6,7 +6,6 @@
 	import Hero from "../lib/Hero.svelte";
 	import Projects from "../lib/Projects.svelte";
 	import Sidebar from "../lib/Sidebar.svelte";
-    import { onDestroy, onMount } from "svelte";
 
     let height;
 
@@ -51,7 +50,7 @@
             fadeAndScale(aboutSection, projectsSection);
             fadeAndScale(projectsSection, contactSection);
         });
-    }  
+    }
 
 </script>
 
@@ -63,24 +62,17 @@
     <Sidebar />
 
     <div bind:this={container} on:scroll={scrollHandler} class=" relative ml-72 h-screen snap-always snap-mandatory snap-y overflow-y-auto">
-        <section bind:this={heroSection} class="sticky top-0 will-change-transform z-50">
+        <section bind:this={heroSection} class="sticky top-0 will-change-transform transform-gpu">
             <Hero />
         </section>
-        <section bind:this={aboutSection} class="sticky top-0 will-change-transform z-50">
+        <section bind:this={aboutSection} class="sticky top-0 will-change-transform transform-gpu">
             <About />
         </section>
-        <section bind:this={projectsSection} class="sticky top-0 will-change-transform z-50">
+        <section bind:this={projectsSection} class="sticky top-0 will-change-transform transform-gpu">
             <Projects />
         </section>
-        <section bind:this={contactSection} class="sticky top-0 will-change-transform z-50">
+        <section bind:this={contactSection} class="sticky top-0 will-change-transform transform-gpu">
             <Contact />
         </section>
     </div>
 </div>
-
-<style>
-    .sticky {
-        will-change: transform;
-        transform: translateZ(0);
-    }
-</style>

@@ -38,4 +38,6 @@
         
 </div>
 
-<img class="fixed h-screen w-screen -z-10" src={noise} alt="background noise">
+<figure data-img>
+    <img class="fixed h-screen w-screen -z-10" src={noise} alt="background noise">
+</figure>
