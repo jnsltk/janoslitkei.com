@@ -6,7 +6,7 @@
 	import Hero from "../lib/Hero.svelte";
 	import Projects from "../lib/Projects.svelte";
 	import Sidebar from "../lib/Sidebar.svelte";
-    import { SvelteComponent, onMount } from "svelte";
+    import { onDestroy, onMount } from "svelte";
 
     let height;
 
@@ -16,28 +16,41 @@
     let contactSection;
     let container;
 
-    let maxDist;
+    let distance;
+    let opacity;
+
+    let scrollAnimationFrame;
 
     const fadeAndScale = (container, neighbour) => {
         // reduce opacity from 1 to 0
         // scale from 1 to 0.5 
         let rect = container.getBoundingClientRect();
         let neighbourRect = neighbour.getBoundingClientRect();
-        let distance = neighbourRect.y - rect.y;
-        let opacity = 1 / height * distance;
-        if (opacity > 0.9) opacity = 1;
-        if (opacity < 0.1) opacity = 0;
+
+        distance = neighbourRect.y - rect.y;
+
+        opacity = 1 / height * distance;
+        if (opacity > 0.9) {
+            opacity = 1;
+        } else if (opacity < 0.1) {
+            opacity = 0;
+        }
+
         container.style.opacity = `${opacity}`;
+
         let scale = ( (opacity - 0) / (1 - 0) ) * (1 - 0.75) + 0.75;
         container.style.transform = `scale(${scale})`
     }
     
-    const scrollHandler = (event) => {
-        if (!container || !heroSection || !aboutSection || !projectsSection || !contactSection) return;
+    const scrollHandler = () => {
+        if (!container) return;
 
-        fadeAndScale(heroSection, aboutSection);
-        fadeAndScale(aboutSection, projectsSection);
-        fadeAndScale(projectsSection, contactSection);
+        cancelAnimationFrame(scrollAnimationFrame);
+        scrollAnimationFrame = requestAnimationFrame(() => {
+            fadeAndScale(heroSection, aboutSection);
+            fadeAndScale(aboutSection, projectsSection);
+            fadeAndScale(projectsSection, contactSection);
+        });
     }  
 
 </script>
@@ -50,17 +63,24 @@
     <Sidebar />
 
     <div bind:this={container} on:scroll={scrollHandler} class="ml-72 h-screen snap-always snap-mandatory snap-y overflow-y-auto">
-        <section bind:this={heroSection} class="sticky top-0">
+        <section bind:this={heroSection} class="sticky top-0 will-change-transform">
             <Hero />
         </section>
-        <section bind:this={aboutSection} class="sticky top-0">
+        <section bind:this={aboutSection} class="sticky top-0 will-change-transform">
             <About />
         </section>
-        <section bind:this={projectsSection} class="sticky top-0">
+        <section bind:this={projectsSection} class="sticky top-0 will-change-transform">
             <Projects />
         </section>
-        <section bind:this={contactSection} class="sticky top-0">
+        <section bind:this={contactSection} class="sticky top-0 will-change-transform">
             <Contact />
         </section>
     </div>
 </div>
+
+<style>
+    .sticky {
+        will-change: transform;
+        transform: translateZ(0);
+    }
+</style>
