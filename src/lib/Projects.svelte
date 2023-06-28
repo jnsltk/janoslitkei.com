@@ -33,7 +33,7 @@
     
 </script>
 
-<div id="projects" class="text-sm ml-24 pt-[8rem] h-screen snap-start">
+<div id="projects" class="text-sm ml-24 pt-[8rem] h-screen">
     <p class="ml-2 mr-16 -mb-3 ">I have worked on a number of projects as part of my studies, and I have done quite a few personal projects as well. Some are web-focused, while others are more general Software Engineering projects. Below are a few of the most important ones.</p>
 
     <div on:scroll={scrollHandler} class="flex flex-nowrap gap-6 py-12 pl-10 snap-x snap-mandatory snap-always overflow-x-auto hide-scroll-bar">

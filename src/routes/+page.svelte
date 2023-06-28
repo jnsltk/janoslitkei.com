@@ -10,8 +10,14 @@
     let height;
 
     let heroSection;
+    let heroScroller;
+
     let aboutSection;
+    let aboutScroller;
+
     let projectsSection;
+    let projectScroller;
+
     let contactSection;
     let container;
 
@@ -46,9 +52,9 @@
 
         cancelAnimationFrame(scrollAnimationFrame);
         scrollAnimationFrame = requestAnimationFrame(() => {
-            fadeAndScale(heroSection, aboutSection);
-            fadeAndScale(aboutSection, projectsSection);
-            fadeAndScale(projectsSection, contactSection);
+            fadeAndScale(heroSection, heroScroller);
+            fadeAndScale(aboutSection, aboutScroller);
+            fadeAndScale(projectsSection, projectScroller);
         });
     }
 
@@ -62,17 +68,28 @@
     <Sidebar />
 
     <div bind:this={container} on:scroll={scrollHandler} class=" relative ml-72 h-screen snap-always snap-mandatory snap-y overflow-y-auto">
-        <section bind:this={heroSection} class="sticky top-0 will-change-transform transform-gpu">
-            <Hero />
-        </section>
-        <section bind:this={aboutSection} class="sticky top-0 will-change-transform transform-gpu">
-            <About />
-        </section>
-        <section bind:this={projectsSection} class="sticky top-0 will-change-transform transform-gpu">
-            <Projects />
-        </section>
-        <section bind:this={contactSection} class="sticky top-0 will-change-transform transform-gpu">
-            <Contact />
-        </section>
+        <div class="snap-start">
+            <section bind:this={heroSection} class="sticky top-0 will-change-transform transform-gpu">
+                <Hero />
+            </section>
+            <div bind:this={heroScroller} class=" h-[50vh]" />
+        </div>
+        <div class="snap-start">
+            <section bind:this={aboutSection} class="sticky top-0 will-change-transform transform-gpu">
+                <About />
+            </section>
+            <div bind:this={aboutScroller} class=" h-[50vh]" />
+        </div>
+        <div class="snap-start">
+            <section bind:this={projectsSection} class="sticky top-0 will-change-transform transform-gpu">
+                <Projects />
+            </section>
+            <div bind:this={projectScroller} class=" h-[50vh]" />
+        </div>
+        <div class="snap-start">
+            <section bind:this={contactSection} class="sticky top-0 will-change-transform transform-gpu">
+                <Contact />
+            </section>
+        </div>
     </div>
 </div>
