@@ -3,7 +3,7 @@
     import { fly, fade } from "svelte/transition";
 </script>
 
-    <div id="home" class="ml-28 h-screen mr-16 flex flex-col justify-end">
+    <div class="ml-28 h-screen mr-16 flex flex-col justify-end">
         <div class="mb-12">
             <p class="font-display text-7xl">I like to code, <br>and build things.</p>
             <p class="mt-14 text-base text-right">

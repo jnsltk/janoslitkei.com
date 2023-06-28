@@ -32,7 +32,7 @@
 
         let neighbourRect = scroller.getBoundingClientRect();
 
-        distance = (neighbourRect.y + neighbourRect.bottom / 2) - rect.y / 4;
+        distance = (neighbourRect.y + neighbourRect.bottom / 2) - rect.y / 8;
 
         opacity = 1 / height * distance;
         if (opacity > 0.95) {
@@ -64,30 +64,30 @@
 
 <div>
     <Background />
-    <Header />
+    <Header {container} sections={{heroSection, aboutSection, projectsSection, contactSection}}/>
     <Sidebar />
 
     <div bind:this={container} on:scroll={scrollHandler} class="scroll-smooth relative ml-72 h-screen snap-always snap-mandatory snap-y overflow-y-auto">
-        <div class="snap-start">
-            <section bind:this={heroSection} class="sticky top-0 will-change-transform transform-gpu">
+        <div id="home" class="snap-start">
+            <section bind:this={heroSection} class="sticky top-0 will-change-auto">
                 <Hero />
             </section>
             <div bind:this={heroScroller} class=" h-[75vh]" />
         </div>
-        <div class="snap-start">
-            <section bind:this={aboutSection} class="sticky top-0 will-change-transform transform-gpu">
+        <div id="about" class="snap-start">
+            <section bind:this={aboutSection} class="sticky top-0 will-change-auto">
                 <About />
             </section>
             <div bind:this={aboutScroller} class=" h-[75vh]" />
         </div>
-        <div class="snap-start">
-            <section bind:this={projectsSection} class="sticky top-0 will-change-transform transform-gpu">
+        <div id="projects" class="snap-start">
+            <section bind:this={projectsSection} class="sticky top-0 will-change-auto">
                 <Projects />
             </section>
             <div bind:this={projectScroller} class=" h-[75vh]" />
         </div>
-        <div class="snap-start">
-            <section bind:this={contactSection} class="sticky top-0 will-change-transform transform-gpu">
+        <div id="contact" class="snap-start">
+            <section bind:this={contactSection} class="sticky top-0 will-change-auto">
                 <Contact />
             </section>
         </div>

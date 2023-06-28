@@ -5,7 +5,7 @@
 	import ExpCard from "./ExpCard.svelte";
 </script>
 
-<div id="about" class="ml-28 h-screen mr-16 flex">
+<div class="ml-28 h-screen mr-16 flex">
     <div class="text-sm leading-relaxed mr-40 mt-auto mb-auto">
         <p class="mb-5">I'm a Hungarian software engineering student based in Gothenburg, Sweden. I have a lot of interests, and I'm always working on something. I have a passion for creating and tinkering with technology.</p>
 
