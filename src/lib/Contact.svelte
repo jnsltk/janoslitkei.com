@@ -1,4 +1,4 @@
-<div id="contact" class="ml-28 pt-6 flex flex-col h-screen mr-16 snap-start">
+<div id="contact" class="ml-28 pt-6 flex flex-col h-screen mr-16">
     <div class="mt-auto mb-auto">
         <h2 class="font-display font-semibold text-xl">Contact me</h2>
         <p class="text-sm mb-8">If you have any questions or would like to work together, please send me a message, I am always happy to help.</p>
