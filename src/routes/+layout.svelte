@@ -1,6 +1,6 @@
 <script>
-    import "../app.css";
-    import "@fontsource/inter";
+	import '../app.css';
+	import '@fontsource/inter';
 </script>
-  
-  <slot />
+
+<slot />

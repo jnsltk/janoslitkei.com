@@ -1,7 +1,1 @@
-<script>
-    import Icon from "svelte-icons-pack";
-    import IoSunny from "svelte-icons-pack/io/IoSunny";
-</script>
-<div class="bg-accent-orange hover:bg-accent-purple rounded-full w-8 h-8 cursor-pointer -z-20 ">
-    
-</div>
+<div class="-z-20 h-8 w-8 cursor-pointer rounded-full bg-accent-orange hover:bg-accent-purple" />
