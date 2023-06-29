@@ -32,19 +32,25 @@
 
         let neighbourRect = scroller.getBoundingClientRect();
 
-        distance = (neighbourRect.y + neighbourRect.bottom / 2) - rect.y / 8;
+        distance = (neighbourRect.y + neighbourRect.bottom / 15) - rect.y / 25;
 
         opacity = 1 / height * distance;
         if (opacity > 0.95) {
             opacity = 1;
-        } else if (opacity < 0.35) {
+        } else if (opacity < 0.1) {
             opacity = 0;
         }
     
         container.style.opacity = `${opacity}`;
 
         let scale = ( (opacity - 0) / (1 - 0) ) * (1 - 0.65) + 0.65;
-        container.style.transform = `scale(${scale})`
+        container.style.transform = `scale(${scale})`;
+        
+        if (opacity < 0.75) {
+            container.style.filter = `blur(${(1-opacity)*15}px)`;
+        } else {
+            container.style.filter = 'blur(0)';
+        }
     }
     
     const scrollHandler = () => {
@@ -67,24 +73,24 @@
     <Header {container} sections={{heroSection, aboutSection, projectsSection, contactSection}}/>
     <Sidebar />
 
-    <div bind:this={container} on:scroll={scrollHandler} class="scroll-smooth relative ml-72 h-screen snap-always snap-mandatory snap-y overflow-y-auto">
+    <div bind:this={container} on:scroll={scrollHandler} class="scroll-smooth relative ml-72 h-screen snap-always snap-proximity snap-y overflow-y-auto">
         <div id="home" class="snap-start">
             <section bind:this={heroSection} class="sticky top-0 will-change-auto">
                 <Hero />
             </section>
-            <div bind:this={heroScroller} class=" h-[75vh]" />
+            <div bind:this={heroScroller} class=" h-[15vh]" />
         </div>
         <div id="about" class="snap-start">
             <section bind:this={aboutSection} class="sticky top-0 will-change-auto">
                 <About />
             </section>
-            <div bind:this={aboutScroller} class=" h-[75vh]" />
+            <div bind:this={aboutScroller} class=" h-[15vh]" />
         </div>
         <div id="projects" class="snap-start">
             <section bind:this={projectsSection} class="sticky top-0 will-change-auto">
                 <Projects />
             </section>
-            <div bind:this={projectScroller} class=" h-[75vh]" />
+            <div bind:this={projectScroller} class=" h-[15vh]" />
         </div>
         <div id="contact" class="snap-start">
             <section bind:this={contactSection} class="sticky top-0 will-change-auto">
