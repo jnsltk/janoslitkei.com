@@ -5,36 +5,31 @@
 	import SmallProject from './SmallProject.svelte';
 </script>
 
-<div class="ml-24 h-screen pt-[8rem] text-sm">
-	<p class="-mb-3 ml-2 mr-16">
-		I have worked on a number of projects as part of my studies, and I have done quite a few
-		personal projects as well. Some are web-focused, while others are more general Software
-		Engineering projects. Below are a few of the most important ones.
-	</p>
-
+<div class="h-[calc(100dvh)] pt-20 text-sm ">
+	<h2 class="md:hidden font-display text-2xl font-semibold">Projects</h2>
 	<div
-		class="hide-scroll-bar flex snap-x snap-mandatory snap-always flex-nowrap gap-12 overflow-x-auto py-12 pl-8"
+		class="hide-scroll-bar flex snap-x snap-mandatory snap-always flex-nowrap gap-4 overflow-x-auto py-3 pl-6 -mx-4"
 	>
-		<div class=" snap-start scroll-ml-8">
+		<div class=" snap-start scroll-ml-2">
 			<ProjectCard
 				img={janoslitkei_com}
 				title="janoslitkei.com"
-				desc="My personal portfolio and website, the one you're currently looking at."
+				desc="My personal portfolio and website, the one you're currently looking at. Made with SvelteJS and SvelteKit, deployed on Vercel."
 				github="https://github.com/jnsltk/janoslitkei.com"
 				link="https://janoslitkei.com"
 				tech={['Svelte', 'HTML', 'CSS', 'Tailwind', 'Javascript']}
 			/>
 		</div>
-		<div class=" snap-start scroll-ml-8">
+		<div class=" snap-start scroll-ml-2">
 			<ProjectCard
 				img={kiwave}
 				title="KiWave Sonar System"
-				desc="An ultrasonic sonar based monitoring system for a university project."
+				desc="An ultrasonic sonar based monitoring system for a university project, consisting of a web-based UI and an arduino-like microcontroller."
 				github="https://github.com/jnsltk/kiwave-sonar-system"
 				tech={['Svelte', 'HTML', 'CSS', 'JavaScript']}
 			/>
 		</div>
-		<div class=" snap-start scroll-ml-8">
+		<div class=" snap-start scroll-ml-2">
 			<SmallProject
 				content={[
 					{
@@ -56,6 +51,7 @@
 			/>
 		</div>
 	</div>
+	<p class="mt-2 text-right text-base animate-pulse">Scroll for more --->></p>
 </div>
 
 <style>

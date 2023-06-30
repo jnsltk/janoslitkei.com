@@ -1,89 +1,69 @@
 <script>
 	import noise from '$lib/assets/noise.svg';
+	import blobs from '$lib/assets/blobs.svg';
 </script>
 
-<div class="container fixed -z-20 h-screen w-screen">
-	<!--Blob 1-->
+<div
+	class="fixed -z-20 h-[calc(100dvh)] w-screen"
+>
 	<svg
-		class="fixed left-[520px] top-[0px] blur-[50px]"
-		id="blob1"
-		width="793"
-		viewBox="0 0 901 854"
+		class="-z-20 absolute w-[850px] left-1/2 -translate-x-[52%] -bottom-24 md:left-2/3 md:w-[950px] md:-bottom-32 blur-2xl"
+		viewBox="0 0 1024 952"
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"
 	>
-		<path
-			fill-rule="evenodd"
-			clip-rule="evenodd"
-			d="M493.014 151.161C613.876 165.462 733.204 239.141 748.996 359.816C764.782 480.446 663.624 571.76 555.304 627.145C433.139 689.609 274.338 751.837 183.622 648.897C96.7964 550.371 200.419 414.643 269.748 303.11C322.29 218.583 394.177 139.467 493.014 151.161Z"
-			fill="url(#paint0_linear_62_16)"
-		/>
+		<g>
+			<path
+				fill-rule="evenodd"
+				clip-rule="evenodd"
+				d="M493.014 175.161C613.876 189.462 733.204 263.141 748.996 383.816C764.782 504.446 663.624 595.76 555.304 651.145C433.139 713.609 274.338 775.837 183.622 672.897C96.7964 574.371 200.419 438.643 269.748 327.11C322.29 242.583 394.177 163.467 493.014 175.161Z"
+				fill="url(#paint0_linear_268_2)"
+			/>
+		</g>
+		<g>
+			<path
+				fill-rule="evenodd"
+				clip-rule="evenodd"
+				d="M560.264 290.003C681.533 290.526 785.57 370.234 825.534 484.73C868.561 608.004 857.766 758.463 748.973 830.657C648.761 897.158 530.197 816.885 434.222 744.403C345.965 677.75 258.288 588.982 287.849 482.408C320.701 363.973 437.358 289.472 560.264 290.003Z"
+				fill="url(#paint1_linear_268_2)"
+			/>
+		</g>
+		<g>
+			<path
+				fill-rule="evenodd"
+				clip-rule="evenodd"
+				d="M440.127 505.552C375.937 429.055 430.311 319.894 488.775 238.824C536.241 173.004 613.475 137.6 692.587 155.473C781.788 175.624 869.487 234.266 873.077 325.643C876.544 413.905 787.647 463.824 706.034 497.737C615.478 535.367 503.105 580.605 440.127 505.552Z"
+				fill="url(#paint2_linear_268_2)"
+			/>
+		</g>
 		<defs>
 			<linearGradient
-				id="paint0_linear_62_16"
+				id="paint0_linear_268_2"
 				x1="743.719"
-				y1="306.106"
+				y1="330.106"
 				x2="230.799"
-				y2="753.366"
+				y2="777.366"
 				gradientUnits="userSpaceOnUse"
 			>
 				<stop stop-color="#CC607A" stop-opacity="0.59" />
 				<stop offset="1" stop-color="#FFC56F" stop-opacity="0.95" />
 			</linearGradient>
-		</defs>
-	</svg>
-
-	<!--Blob 2-->
-	<svg
-		class="fixed left-[640px] top-[70px] blur-[50px]"
-		id="blob2"
-		width="763"
-		viewBox="0 0 868 812"
-		fill="none"
-		xmlns="http://www.w3.org/2000/svg"
-	>
-		<path
-			fill-rule="evenodd"
-			clip-rule="evenodd"
-			d="M428.264 150.003C549.533 150.526 653.57 230.234 693.534 344.73C736.561 468.004 725.766 618.463 616.973 690.657C516.761 757.158 398.197 676.885 302.222 604.403C213.965 537.75 126.288 448.982 155.849 342.408C188.701 223.973 305.358 149.472 428.264 150.003Z"
-			fill="url(#paint0_linear_62_17)"
-		/>
-		<defs>
 			<linearGradient
-				id="paint0_linear_62_17"
-				x1="214.105"
-				y1="209.949"
-				x2="695.105"
-				y2="673.949"
+				id="paint1_linear_268_2"
+				x1="346.105"
+				y1="349.949"
+				x2="827.105"
+				y2="813.949"
 				gradientUnits="userSpaceOnUse"
 			>
 				<stop stop-color="#CE0F3D" stop-opacity="0.83" />
 				<stop offset="1" stop-color="#A472BB" stop-opacity="0.62" />
 			</linearGradient>
-		</defs>
-	</svg>
-
-	<!--Blob 3-->
-	<svg
-		class="fixed left-[750px] top-[-60px] blur-[50px]"
-		id="blob3"
-		width="671"
-		viewBox="0 0 763 697"
-		fill="none"
-		xmlns="http://www.w3.org/2000/svg"
-	>
-		<path
-			fill-rule="evenodd"
-			clip-rule="evenodd"
-			d="M179.127 505.552C114.937 429.055 169.311 319.894 227.775 238.824C275.241 173.004 352.475 137.6 431.587 155.473C520.788 175.624 608.487 234.266 612.077 325.643C615.545 413.905 526.647 463.824 445.034 497.737C354.478 535.367 242.105 580.605 179.127 505.552Z"
-			fill="url(#paint0_linear_62_18)"
-		/>
-		<defs>
 			<linearGradient
-				id="paint0_linear_62_18"
-				x1="164.934"
+				id="paint2_linear_268_2"
+				x1="425.934"
 				y1="469.791"
-				x2="612.792"
+				x2="873.792"
 				y2="274.248"
 				gradientUnits="userSpaceOnUse"
 			>
@@ -95,6 +75,14 @@
 	</svg>
 </div>
 
-<figure data-img>
-	<img class="fixed -z-10 h-screen w-screen" src={noise} alt="background noise" />
-</figure>
+<!-- <figure data-img>
+	<img class="fixed -z-10 h-[calc(100dvh)] w-screen" src={noise} alt="Background noise" />
+</figure> -->
+<div class="bg fixed -z-10 h-[calc(100dvh)] w-screen" />
+
+<style>
+	.bg {
+		background-image: url("$lib/assets/noise.svg");
+		background-repeat: repeat;
+	}
+</style>

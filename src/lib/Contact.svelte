@@ -1,12 +1,12 @@
-<div class="ml-28 mr-16 flex h-screen flex-col pt-6">
+<div class=" h-[calc(100dvh)] pt-20">
 	<div class="mb-auto mt-auto">
-		<h2 class="font-display text-xl font-semibold">Contact me</h2>
-		<p class="mb-8 text-sm">
+		<h2 class="font-display text-2xl font-semibold">Contact me</h2>
+		<p class="mb-5 text-base">
 			If you have any questions or would like to work together, please send me a message, I am
 			always happy to help.
 		</p>
 		<form action="#" class="w-full max-w-2xl">
-			<div class="-mx-3 mb-2 flex">
+			<div class="-mx-3 flex mb-1">
 				<div class="w-full px-3">
 					<label class="mb-2 block text-xs font-bold tracking-wide" for="grid-name"> Name </label>
 					<input
@@ -26,7 +26,7 @@
 					/>
 				</div>
 			</div>
-			<div class="w-full pb-5">
+			<div class="w-full mb-5">
 				<label class="mb-2 block text-xs font-bold tracking-wide" for="grid-message">
 					Message
 				</label>
@@ -35,13 +35,13 @@
 					name="Message"
 					id="grid-message"
 					cols="30"
-					rows="15"
+					rows="14"
 					placeholder="Type your message here..."
 				/>
 			</div>
 			<button
 				type="submit"
-				class="focus:ring-primary-300 rounded-lg bg-gray-900 px-5 py-3 text-center text-sm font-medium text-gray-100 hover:bg-accent-orange focus:outline-none focus:ring-4"
+				class="focus:ring-primary-300 rounded-lg bg-gray-800 px-5 py-2.5 text-center text-sm font-medium text-gray-100 hover:bg-accent-orange focus:outline-none focus:ring-4"
 				>Send message</button
 			>
 		</form>

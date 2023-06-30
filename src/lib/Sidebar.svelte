@@ -8,7 +8,7 @@
 	import Switch from './Switch.svelte';
 </script>
 
-<div class="fixed top-32 z-20 ml-16 flex w-auto flex-col">
+<div class=" flex w-auto flex-col">
 	<div class="mr-auto">
 		<img class="mb-6 mr-auto w-52 rounded-full" src={jan} alt="Me, Janos Litkei" />
 		<div class="ml-auto mr-auto flex justify-center gap-6">
@@ -23,9 +23,5 @@
 			>
 			<a href="mailto:janos.litkei@gmail.com"><Icon src={IoMailOpen} size="1.75em" /></a>
 		</div>
-	</div>
-
-	<div class="fixed bottom-12">
-		<Switch />
 	</div>
 </div>

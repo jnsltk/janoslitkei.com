@@ -2,10 +2,12 @@
 	import About from '../lib/About.svelte';
 	import Background from '../lib/Background.svelte';
 	import Contact from '../lib/Contact.svelte';
+	import Experience from '../lib/Experience.svelte';
 	import Header from '../lib/Header.svelte';
 	import Hero from '../lib/Hero.svelte';
 	import Projects from '../lib/Projects.svelte';
 	import Sidebar from '../lib/Sidebar.svelte';
+	import Switch from '../lib/Switch.svelte';
 
 	let height;
 
@@ -14,6 +16,9 @@
 
 	let aboutSection;
 	let aboutScroller;
+
+	let expSection;
+	let expScroller;
 
 	let projectsSection;
 	let projectScroller;
@@ -60,6 +65,7 @@
 		scrollAnimationFrame = requestAnimationFrame(() => {
 			fadeAndScale(heroSection, heroScroller);
 			fadeAndScale(aboutSection, aboutScroller);
+			fadeAndScale(expSection, expScroller);
 			fadeAndScale(projectsSection, projectScroller);
 		});
 	};
@@ -67,38 +73,47 @@
 
 <svelte:window bind:innerHeight={height} />
 
-<div>
-	<Background />
-	<Header {container} sections={{ heroSection, aboutSection, projectsSection, contactSection }} />
-	<Sidebar />
-
-	<div
-		bind:this={container}
-		on:scroll={scrollHandler}
-		class="relative ml-72 h-screen snap-y snap-proximity snap-always overflow-y-auto scroll-smooth"
-	>
-		<div id="home" class="snap-start">
-			<section bind:this={heroSection} class="sticky top-0 will-change-auto">
-				<Hero />
-			</section>
-			<div bind:this={heroScroller} class=" h-[15vh]" />
-		</div>
-		<div id="about" class="snap-start">
-			<section bind:this={aboutSection} class="sticky top-0 will-change-auto">
-				<About />
-			</section>
-			<div bind:this={aboutScroller} class=" h-[15vh]" />
-		</div>
-		<div id="projects" class="snap-start">
-			<section bind:this={projectsSection} class="sticky top-0 will-change-auto">
-				<Projects />
-			</section>
-			<div bind:this={projectScroller} class=" h-[15vh]" />
-		</div>
-		<div id="contact" class="snap-start">
-			<section bind:this={contactSection} class="sticky top-0 will-change-auto">
-				<Contact />
-			</section>
-		</div>
+<Background />
+<Header {container} sections={{ heroSection, aboutSection, expSection, projectsSection, contactSection }} />
+<div class="hidden md:block fixed top-32 z-20 ml-16">
+    <Sidebar />
+</div>
+<div class="hidden md:block fixed bottom-12 left-12">
+		<Switch />
 	</div>
+
+<div
+    bind:this={container}
+    on:scroll={scrollHandler}
+    class="relative px-4 md:ml-72 h-[calc(100dvh)] snap-y snap-mandatory snap-always overflow-y-auto scroll-smooth"
+>
+    <div id="home" class="snap-start">
+        <section bind:this={heroSection} class="sticky top-0 will-change-auto">
+            <Hero />
+        </section>
+        <div bind:this={heroScroller} class=" h-[15vh]" />
+    </div>
+    <div id="about" class="snap-start">
+        <section bind:this={aboutSection} class="sticky top-0 will-change-auto">
+            <About />
+        </section>
+        <div bind:this={aboutScroller} class=" h-[15vh]" />
+    </div>
+	<div id="experience" class="snap-start">
+        <section bind:this={expSection} class="sticky top-0 will-change-auto">
+            <Experience />
+        </section>
+        <div bind:this={expScroller} class=" h-[15vh]" />
+    </div>
+    <div id="projects" class="snap-start">
+        <section bind:this={projectsSection} class="sticky top-0 will-change-auto">
+            <Projects />
+        </section>
+        <div bind:this={projectScroller} class=" h-[15vh]" />
+    </div>
+    <div id="contact" class="snap-start">
+        <section bind:this={contactSection} class="sticky top-0 will-change-auto">
+            <Contact />
+        </section>
+    </div>
 </div>

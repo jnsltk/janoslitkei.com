@@ -1,44 +1,19 @@
 <script>
 	import Icon from 'svelte-icons-pack';
 	import HiSolidExternalLink from 'svelte-icons-pack/hi/HiSolidExternalLink';
-	import ExpCard from './ExpCard.svelte';
+	import jan from '$lib/assets/jan.png'
 </script>
 
-<div class="ml-28 mr-16 flex h-screen">
-	<div class="mb-auto mr-40 mt-auto text-sm leading-relaxed">
-		<p class="mb-5">
-			I'm a Hungarian software engineering student based in Gothenburg, Sweden. I have a lot of
-			interests, and I'm always working on something. I have a passion for creating and tinkering
-			with technology.
-		</p>
+<div class=" h-[calc(100dvh)] flex flex-col justify-start pt-20 pb-8">
+	<h2 class="md:hidden font-display text-2xl font-semibold mb-4">About me</h2>
+	<div class="text-base leading-relaxed text-justify hyphens-auto">
+		<img class="float-left mb-1 mr-3 w-1/2 rounded-lg" src={jan} alt="Me, Janos Litkei" />
 
-		<p class="mb-6">
-			Currently, I'm pursuing a joint Bachelor's degree in Software Engineering and Management from
-			Chalmers University of Technology and the University of Gothenburg.
-		</p>
-		<h2 class="mb-2 font-display text-xl font-semibold">My experience</h2>
-		<div class="justify-left mb-10 flex gap-5">
-			<ExpCard
-				title="Backend Development"
-				content={['Java', 'Python', 'NodeJS', 'SQL', 'MongoDB']}
-			/>
-			<ExpCard
-				title="Frontend Development"
-				content={['HTML', 'CSS', 'Tailwind CSS', 'JavaScript', 'SvelteJS']}
-			/>
-			<ExpCard
-				title="Other areas of expertise"
-				content={[
-					'Object-oriented programming',
-					'Agile project management',
-					'Data structures and algorithms',
-					'Requirements engineering',
-					'UX design'
-				]}
-			/>
-		</div>
+		<p class="mb-4">I'm a Hungarian software engineering student based in Gothenburg, Sweden. I have a lot of interests, and I'm always working on something. I have a passion for creating and tinkering with technology.</p>
 
-		<p class="font-semibold">
+        <p class="mb-4">Currently, I'm pursuing a joint Bachelor's degree in Software Engineering and Management from Chalmers University of Technology and the University of Gothenburg.</p>
+
+		<p class="absolute bottom-6 font-semibold text-left">
 			<a class="underline" href="https://github.com/jnsltk" target="_blank"
 				>Check out my GitHub<Icon
 					src={HiSolidExternalLink}

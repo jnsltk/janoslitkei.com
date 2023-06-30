@@ -14,13 +14,17 @@
 </script>
 
 <div
-	class=" z-50 flex h-[28rem] w-[24rem] flex-col overflow-hidden rounded-xl bg-light-bg-300/50 shadow-md backdrop-blur-md transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
+	class=" z-50 flex h-[27rem] w-[96vw] flex-col overflow-hidden rounded-xl bg-light-bg-300/50 shadow-md backdrop-blur-md transition-all duration-300 ease-in-out md:hover:scale-105 hover:shadow-xl"
 >
 	<a href={link}><img src={img} alt={desc} class="w-full" /></a>
-	<div class="px-8 py-6">
+	<div class="px-6 py-4">
 		<div class="mb-2 text-base font-semibold"><a href={link}>{title}</a></div>
-		<p class="mb-4 text-sm">{desc}</p>
-		<a class="-ml-0.5 text-sm font-semibold underline" href={github} target="_blank"
+		<p class="text-sm">{desc}</p>
+		
+	</div>
+	<div class="mt-auto px-6 pb-4">
+		<div class="mb-3">
+			<a class="-ml-0.5 text-sm font-semibold underline" href={github} target="_blank"
 			><Icon src={AiFillGithub} className="inline mr-1.5 mb-0.5" size="1.5em" color="black" />Check
 			it out on github!<Icon
 				src={HiSolidExternalLink}
@@ -29,11 +33,10 @@
 				color="black"
 			/></a
 		>
-	</div>
-	<div class="mt-auto px-8 pb-3">
+		</div>
 		{#each tech as t}
 			<span
-				class="font-base mb-2 mr-2 inline-block rounded-full bg-accent-orange px-2 py-1 text-xs text-gray-50"
+				class="font-base mb-2 mr-1 inline-block rounded-full bg-accent-orange px-2 py-1 text-xs text-gray-50"
 				>{t}</span
 			>
 		{/each}
