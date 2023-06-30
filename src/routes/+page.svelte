@@ -78,7 +78,7 @@
 <div class="hidden lg:block fixed top-24 z-20 ml-8">
     <Sidebar />
 </div>
-<div class="hidden md:block fixed bottom-8 left-8">
+<div class="hidden md:block fixed bottom-8 z-50 left-8">
 		<Switch />
 	</div>
 

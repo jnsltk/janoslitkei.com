@@ -2,7 +2,7 @@
 	import arrow from '$lib/assets/arrow.svg';
 </script>
 
-<div class="flex h-[calc(100dvh)] flex-col justify-end lg:bg-blue-400">
+<div class="flex h-[calc(100dvh)] flex-col justify-end">
 	<div class="md:pb-4">
 		<p class="font-display text-6xl md:text-7xl">I like to <br class="md:hidden" />code, <br class="hidden md:inline"/> and build things.</p>
 		<p class="animate-pulse mt-14 md:mt-24 mb-4 text-right text-base">

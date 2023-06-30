@@ -9,12 +9,11 @@
 <div
 	class="mr-2 h-[27rem] w-[96vw] md:h-[42rem] md:w-[92vw] overflow-hidden rounded-xl bg-light-bg-300/50 shadow-md backdrop-blur-md transition-all duration-300 ease-in-out lg:hover:shadow-xl lg:hover:scale-105"
 >
-	<div class="px-6 py-4 md:px-8 md:py-10">
-		<h2 class="mb-1 font-display text-xl font-semibold">Others</h2>
-		<p class="mb-6">
+	<div class="px-6 py-6 md:px-8 md:py-10">
+		<p class="mb-8">
 			Some other personal and university projects I've worked on that are worth mentioning.
 		</p>
-		<div class="flex flex-wrap gap-2 md:gap-5">
+		<div class="flex flex-wrap gap-5 md:gap-5">
 			{#each content as card}
 				<div
 					class="mr-4 md:mr-4 max-w-xs border-l-4 border-gray-900 px-2 md:px-4 hover:border-accent-orange md:max-w-[45%]"

@@ -1,6 +1,6 @@
 <div class=" h-[calc(100dvh)] pt-20 md:pt-32">
 	<div class="mb-auto mt-auto">
-		<h2 class="font-display text-2xl font-semibold md:mb-2">Contact me</h2>
+		<h2 class="font-display text-2xl font-semibold mb-3 md:mb-6">Contact me</h2>
 		<p class="mb-5 text-base md:mb-12">
 			If you have any questions or would like to work together, please send me a message, I am
 			always happy to help.

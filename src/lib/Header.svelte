@@ -3,7 +3,7 @@
 	export let sections;
 </script>
 
-<div class="fixed left-0 right-0 top-0 z-20 flex justify-between px-4 pt-6 md:px-8 ">
+<div class="fixed left-0 right-0 top-0 z-20 flex justify-between px-4 pt-4 md:px-8">
 	<div class="">
 		<h1 class="mb-4 font-display text-4xl md:mt-6">Janos Litkei</h1>
 	</div>

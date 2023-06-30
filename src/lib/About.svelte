@@ -5,9 +5,9 @@
 </script>
 
 <div class=" h-[calc(100dvh)] flex flex-col justify-start pt-20 pb-8 md:pt-32">
-	<h2 class="lg:hidden font-display text-2xl font-semibold mb-4 ">About me</h2>
+	<h2 class="lg:hidden font-display text-2xl font-semibold mb-3 ">About me</h2>
 	<div class="text-base leading-relaxed text-justify hyphens-auto">
-		<img class="float-left mb-1 mr-3 w-1/2 md:w-1/3 md:mr-5 rounded-lg" src={jan} alt="Me, Janos Litkei" />
+		<img class="float-left mb-1 mr-3 w-1/2 md:w-1/3 md:mr-5 rounded-full" src={jan} alt="Me, Janos Litkei" />
 
 		<p class="mb-4">I'm a Hungarian software engineering student based in Gothenburg, Sweden. I have a lot of interests, and I'm always working on something. I have a passion for creating and tinkering with technology.</p>
 

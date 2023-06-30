@@ -3,7 +3,7 @@
 </script>
 
 <div class="h-[calc(100dvh)] flex flex-col justify-start pt-20 pb-4 md:pt-32">
-	<h2 class="lg:hidden font-display text-2xl mb-4 font-semibold">My experience</h2>
+	<h2 class="lg:hidden font-display text-2xl mb-3 font-semibold">My experience</h2>
     <div class="text-base leading-relaxed text-justify hyphens-auto">
         <p class="mb-2 md:mb-4">I have had experience working with many different technologies both as part of my studies at university and through my personal projects. I'm always looking to learn new things!</p>
     </div>

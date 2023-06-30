@@ -8,7 +8,7 @@
 <div class="h-[calc(100dvh)] pt-20 text-sm md:pt-32">
 	<h2 class="lg:hidden font-display text-2xl font-semibold md:pb-2">Projects</h2>
 	<div
-		class="hide-scroll-bar flex snap-x snap-mandatory snap-always flex-nowrap gap-4 md:gap-10 overflow-x-auto py-3 pl-6 -mx-4 md:-mx-8 md:pl-8 md:py-6"
+		class="hide-scroll-bar flex snap-x snap-mandatory snap-always flex-nowrap gap-4 md:gap-10 overflow-x-auto pt-6 pb-3 pl-6 -mx-4 md:-mx-8 md:pl-8 md:py-6"
 	>
 		<div class=" snap-start scroll-ml-2 md:scroll-m-8">
 			<ProjectCard
