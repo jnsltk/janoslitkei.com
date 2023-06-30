@@ -3,11 +3,9 @@
 	import blobs from '$lib/assets/blobs.svg';
 </script>
 
-<div
-	class="fixed -z-20 h-[calc(100dvh)] w-screen"
->
+<div class="fixed -z-20 h-[calc(100dvh)] w-screen">
 	<svg
-		class="-z-20 absolute w-[850px] left-1/2 -translate-x-[52%] -bottom-24 md:w-[1150px] lg:left-2/3 lg:w-[950px] lg:-bottom-32 blur-2xl"
+		class="absolute -bottom-24 left-1/2 -z-20 w-[850px] -translate-x-[52%] blur-2xl md:w-[1150px] lg:-bottom-32 lg:left-2/3 lg:w-[950px]"
 		viewBox="0 0 1024 952"
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +80,7 @@
 
 <style>
 	.bg {
-		background-image: url("$lib/assets/noise.svg");
+		background-image: url('$lib/assets/noise.svg');
 		background-repeat: repeat;
 	}
 </style>

@@ -1,12 +1,12 @@
-<div class=" h-[calc(100dvh)] pt-20 md:pt-32">
-	<div class="mb-auto mt-auto">
-		<h2 class="font-display text-2xl font-semibold mb-3 md:mb-6">Contact me</h2>
-		<p class="mb-5 text-base md:mb-12">
+<div class=" h-[calc(100dvh)] pt-20 md:pt-32 lg:ml-80">
+	<div class="lg:max-w-screen-sm">
+		<h2 class="mb-3 font-display text-2xl font-semibold md:mb-6 lg:hidden">Contact me</h2>
+		<p class="mb-5 text-base hyphens-auto text-justify leading-relaxed lg:max-w-screen-md lg:hyphens-none lg:text-left">
 			If you have any questions or would like to work together, please send me a message, I am
 			always happy to help.
 		</p>
 		<form action="#" class="w-full">
-			<div class="-mx-3 flex mb-1">
+			<div class="-mx-3 mb-1 flex">
 				<div class="w-full px-3">
 					<label class="mb-2 block text-xs font-bold tracking-wide" for="grid-name"> Name </label>
 					<input
@@ -26,12 +26,12 @@
 					/>
 				</div>
 			</div>
-			<div class="w-full mb-5">
+			<div class="mb-5 w-full">
 				<label class="mb-2 block text-xs font-bold tracking-wide" for="grid-message">
 					Message
 				</label>
 				<textarea
-					class="mb-3 block w-full resize-none rounded border h-56 md:h-auto border-light-bg-500 bg-light-bg-300/50 px-4 py-3 text-xs leading-tight shadow-md backdrop-blur-md placeholder:text-gray-600 focus:border-smoky-black focus:bg-light-bg-100/50 focus:outline-none focus:ring-smoky-black"
+					class="mb-3 block h-56 w-full resize-none rounded border border-light-bg-500 bg-light-bg-300/50 px-4 py-3 text-xs leading-tight shadow-md backdrop-blur-md placeholder:text-gray-600 focus:border-smoky-black focus:bg-light-bg-100/50 focus:outline-none focus:ring-smoky-black md:h-auto lg:h-52"
 					name="Message"
 					id="grid-message"
 					cols="30"

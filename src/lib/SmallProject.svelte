@@ -7,16 +7,17 @@
 </script>
 
 <div
-	class="mr-2 h-[27rem] w-[96vw] md:h-[42rem] md:w-[92vw] overflow-hidden rounded-xl bg-light-bg-300/50 shadow-md backdrop-blur-md transition-all duration-300 ease-in-out lg:hover:shadow-xl lg:hover:scale-105"
+	class="mr-2 h-[27rem] w-[96vw] overflow-hidden rounded-xl bg-light-bg-300/50 shadow-md backdrop-blur-md transition-all duration-300 ease-in-out md:h-[42rem] md:w-[92vw] lg:h-[31rem] lg:w-[30vw] lg:hover:scale-105 lg:hover:shadow-xl"
 >
-	<div class="px-6 py-6 md:px-8 md:py-10">
+	<div class="px-6 py-6 md:px-8 md:py-10 lg:py-8">
+		<h1 class="hidden font-display text-2xl font-bold mb-4 lg:block">Other projects</h1>
 		<p class="mb-8">
 			Some other personal and university projects I've worked on that are worth mentioning.
 		</p>
-		<div class="flex flex-wrap gap-5 md:gap-5">
+		<div class="flex flex-wrap gap-5">
 			{#each content as card}
 				<div
-					class="mr-4 md:mr-4 max-w-xs border-l-4 border-gray-900 px-2 md:px-4 hover:border-accent-orange md:max-w-[45%]"
+					class="mr-4 max-w-xs border-l-4 border-gray-900 px-2 hover:border-accent-orange md:mr-4 md:max-w-[45%] md:px-4 lg:max-w-none"
 				>
 					<a class="-ml-0.5 text-base font-semibold underline" href={card.github} target="_blank"
 						><Icon
@@ -31,7 +32,7 @@
 							color="black"
 						/></a
 					>
-					<p class="md:mt-2 text-sm text-justify hyphens-auto">{card.desc}</p>
+					<p class="hyphens-auto text-justify text-sm md:mt-2">{card.desc}</p>
 				</div>
 			{/each}
 		</div>

@@ -74,46 +74,49 @@
 <svelte:window bind:innerHeight={height} />
 
 <Background />
-<Header {container} sections={{ heroSection, aboutSection, expSection, projectsSection, contactSection }} />
-<div class="hidden lg:block fixed top-24 z-20 ml-8">
-    <Sidebar />
+<Header
+	{container}
+	sections={{ heroSection, aboutSection, expSection, projectsSection, contactSection }}
+/>
+<div class="fixed top-24 z-20 ml-8 hidden lg:top-32 lg:ml-16 lg:block">
+	<Sidebar />
 </div>
-<div class="hidden md:block fixed bottom-8 z-50 left-8">
-		<Switch />
-	</div>
+<div class="fixed bottom-8 left-8 z-50 hidden md:block lg:bottom-12 lg:left-16">
+	<Switch />
+</div>
 
 <div
-    bind:this={container}
-    on:scroll={scrollHandler}
-    class="relative px-4 md:px-8 h-[calc(100dvh)] snap-y snap-mandatory snap-always overflow-y-auto scroll-smooth"
+	bind:this={container}
+	on:scroll={scrollHandler}
+	class="relative h-[calc(100dvh)] snap-y snap-mandatory snap-always overflow-y-auto scroll-smooth px-4 md:px-8 lg:px-16"
 >
-    <div id="home" class="snap-start">
-        <section bind:this={heroSection} class="sticky top-0 will-change-auto">
-            <Hero />
-        </section>
-        <div bind:this={heroScroller} class=" h-[15vh]" />
-    </div>
-    <div id="about" class="snap-start">
-        <section bind:this={aboutSection} class="sticky top-0 will-change-auto">
-            <About />
-        </section>
-        <div bind:this={aboutScroller} class=" h-[15vh]" />
-    </div>
+	<div id="home" class="snap-start">
+		<section bind:this={heroSection} class="sticky top-0 will-change-auto">
+			<Hero />
+		</section>
+		<div bind:this={heroScroller} class=" h-[15vh]" />
+	</div>
+	<div id="about" class="snap-start">
+		<section bind:this={aboutSection} class="sticky top-0 will-change-auto">
+			<About />
+		</section>
+		<div bind:this={aboutScroller} class=" h-[15vh]" />
+	</div>
 	<div id="experience" class="snap-start">
-        <section bind:this={expSection} class="sticky top-0 will-change-auto">
-            <Experience />
-        </section>
-        <div bind:this={expScroller} class=" h-[15vh]" />
-    </div>
-    <div id="projects" class="snap-start">
-        <section bind:this={projectsSection} class="sticky top-0 will-change-auto">
-            <Projects />
-        </section>
-        <div bind:this={projectScroller} class=" h-[15vh]" />
-    </div>
-    <div id="contact" class="snap-start">
-        <section bind:this={contactSection} class="sticky top-0 will-change-auto">
-            <Contact />
-        </section>
-    </div>
+		<section bind:this={expSection} class="sticky top-0 will-change-auto">
+			<Experience />
+		</section>
+		<div bind:this={expScroller} class=" h-[15vh]" />
+	</div>
+	<div id="projects" class="snap-start">
+		<section bind:this={projectsSection} class="sticky top-0 will-change-auto">
+			<Projects />
+		</section>
+		<div bind:this={projectScroller} class=" h-[15vh]" />
+	</div>
+	<div id="contact" class="snap-start">
+		<section bind:this={contactSection} class="sticky top-0 will-change-auto">
+			<Contact />
+		</section>
+	</div>
 </div>

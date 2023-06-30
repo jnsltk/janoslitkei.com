@@ -8,7 +8,7 @@
 	import Switch from './Switch.svelte';
 </script>
 
-<div class=" flex w-auto flex-col">
+<div class="flex w-auto flex-col">
 	<div class="mr-auto">
 		<img class="mb-6 mr-auto w-52 rounded-full" src={jan} alt="Me, Janos Litkei" />
 		<div class="ml-auto mr-auto flex justify-center gap-6">

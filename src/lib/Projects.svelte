@@ -5,10 +5,10 @@
 	import SmallProject from './SmallProject.svelte';
 </script>
 
-<div class="h-[calc(100dvh)] pt-20 text-sm md:pt-32">
-	<h2 class="lg:hidden font-display text-2xl font-semibold md:pb-2">Projects</h2>
+<div class="h-[calc(100dvh)] pt-20 text-sm md:pt-32 lg:ml-80 lg:pt-24">
+	<h2 class="font-display text-2xl font-semibold md:pb-2 lg:hidden">Projects</h2>
 	<div
-		class="hide-scroll-bar flex snap-x snap-mandatory snap-always flex-nowrap gap-4 md:gap-10 overflow-x-auto pt-6 pb-3 pl-6 -mx-4 md:-mx-8 md:pl-8 md:py-6"
+		class="hide-scroll-bar -mx-4 flex snap-x snap-mandatory snap-always flex-nowrap gap-4 overflow-x-auto pb-3 pl-6 pt-6 md:-mx-8 md:gap-10 md:py-6 md:pl-8 lg:pb-12 lg:-mr-16 lg:ml-0"
 	>
 		<div class=" snap-start scroll-ml-2 md:scroll-m-8">
 			<ProjectCard
@@ -29,12 +29,12 @@
 				tech={['Svelte', 'HTML', 'CSS', 'JavaScript']}
 			/>
 		</div>
-		<div class=" snap-start scroll-ml-2 md:scroll-m-8 md:pr-7">
+		<div class=" snap-start scroll-ml-2 md:scroll-m-8 md:pr-7 lg:snap-none lg:pr-44">
 			<SmallProject
 				content={[
 					{
 						title: 'Snakegame',
-						desc: 'A simple snake game created using Java 17 and JavaFX for a university course called \'Mini Project: Team Programming\'.',
+						desc: "A simple snake game created using Java 17 and JavaFX for a university course called 'Mini Project: Team Programming'.",
 						github: 'https://github.com/jnsltk/snakegame'
 					},
 					{
@@ -51,7 +51,7 @@
 			/>
 		</div>
 	</div>
-	<p class="mt-2 text-right text-base animate-pulse">Scroll for more --->></p>
+	<p class="mt-2 animate-pulse text-right text-base lg:-m-6">Scroll for more --->></p>
 </div>
 
 <style>
