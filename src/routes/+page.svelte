@@ -75,17 +75,17 @@
 
 <Background />
 <Header {container} sections={{ heroSection, aboutSection, expSection, projectsSection, contactSection }} />
-<div class="hidden md:block fixed top-32 z-20 ml-16">
+<div class="hidden lg:block fixed top-24 z-20 ml-8">
     <Sidebar />
 </div>
-<div class="hidden md:block fixed bottom-12 left-12">
+<div class="hidden md:block fixed bottom-8 left-8">
 		<Switch />
 	</div>
 
 <div
     bind:this={container}
     on:scroll={scrollHandler}
-    class="relative px-4 md:ml-72 h-[calc(100dvh)] snap-y snap-mandatory snap-always overflow-y-auto scroll-smooth"
+    class="relative px-4 md:px-8 h-[calc(100dvh)] snap-y snap-mandatory snap-always overflow-y-auto scroll-smooth"
 >
     <div id="home" class="snap-start">
         <section bind:this={heroSection} class="sticky top-0 will-change-auto">

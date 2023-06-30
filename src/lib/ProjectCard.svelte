@@ -14,10 +14,10 @@
 </script>
 
 <div
-	class=" z-50 flex h-[27rem] w-[96vw] flex-col overflow-hidden rounded-xl bg-light-bg-300/50 shadow-md backdrop-blur-md transition-all duration-300 ease-in-out md:hover:scale-105 hover:shadow-xl"
+	class=" z-50 flex h-[27rem] w-[96vw] md:w-[92vw] md:h-[42rem] flex-col overflow-hidden rounded-xl bg-light-bg-300/50 shadow-md backdrop-blur-md transition-all duration-300 ease-in-out lg:hover:scale-105 lg:hover:shadow-xl"
 >
 	<a href={link}><img src={img} alt={desc} class="w-full" /></a>
-	<div class="px-6 py-4">
+	<div class="px-6 py-4 md:px-8 md:py-6">
 		<div class="mb-2 text-base font-semibold"><a href={link}>{title}</a></div>
 		<p class="text-sm">{desc}</p>
 		

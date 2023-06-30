@@ -1,11 +1,11 @@
-<div class=" h-[calc(100dvh)] pt-20">
+<div class=" h-[calc(100dvh)] pt-20 md:pt-32">
 	<div class="mb-auto mt-auto">
-		<h2 class="font-display text-2xl font-semibold">Contact me</h2>
-		<p class="mb-5 text-base">
+		<h2 class="font-display text-2xl font-semibold md:mb-2">Contact me</h2>
+		<p class="mb-5 text-base md:mb-12">
 			If you have any questions or would like to work together, please send me a message, I am
 			always happy to help.
 		</p>
-		<form action="#" class="w-full max-w-2xl">
+		<form action="#" class="w-full">
 			<div class="-mx-3 flex mb-1">
 				<div class="w-full px-3">
 					<label class="mb-2 block text-xs font-bold tracking-wide" for="grid-name"> Name </label>
@@ -31,11 +31,11 @@
 					Message
 				</label>
 				<textarea
-					class="mb-3 block w-full resize-none rounded border border-light-bg-500 bg-light-bg-300/50 px-4 py-3 text-xs leading-tight shadow-md backdrop-blur-md placeholder:text-gray-600 focus:border-smoky-black focus:bg-light-bg-100/50 focus:outline-none focus:ring-smoky-black"
+					class="mb-3 block w-full resize-none rounded border h-56 md:h-auto border-light-bg-500 bg-light-bg-300/50 px-4 py-3 text-xs leading-tight shadow-md backdrop-blur-md placeholder:text-gray-600 focus:border-smoky-black focus:bg-light-bg-100/50 focus:outline-none focus:ring-smoky-black"
 					name="Message"
 					id="grid-message"
 					cols="30"
-					rows="14"
+					rows="20"
 					placeholder="Type your message here..."
 				/>
 			</div>

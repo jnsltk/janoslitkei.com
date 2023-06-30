@@ -7,7 +7,7 @@
 	class="fixed -z-20 h-[calc(100dvh)] w-screen"
 >
 	<svg
-		class="-z-20 absolute w-[850px] left-1/2 -translate-x-[52%] -bottom-24 md:left-2/3 md:w-[950px] md:-bottom-32 blur-2xl"
+		class="-z-20 absolute w-[850px] left-1/2 -translate-x-[52%] -bottom-24 md:w-[1150px] lg:left-2/3 lg:w-[950px] lg:-bottom-32 blur-2xl"
 		viewBox="0 0 1024 952"
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"

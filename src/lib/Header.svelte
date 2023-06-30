@@ -3,11 +3,11 @@
 	export let sections;
 </script>
 
-<div class="fixed left-0 right-0 top-0 z-20 flex justify-between px-4 pt-6 md:px-16 md:pt-12">
+<div class="fixed left-0 right-0 top-0 z-20 flex justify-between px-4 pt-6 md:px-8 ">
 	<div class="">
-		<h1 class="mb-4 font-display text-4xl">Janos Litkei</h1>
+		<h1 class="mb-4 font-display text-4xl md:mt-6">Janos Litkei</h1>
 	</div>
-	<nav class="hidden md:block">
+	<nav class="hidden lg:block">
 		<ul class=" mt-2 flex gap-10 text-base font-semibold">
 			<li>
 				<a
