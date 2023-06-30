@@ -1,49 +1,65 @@
 <script>
-	import ProjectCard from "./ProjectCard.svelte";
-    import kiwave from "$lib/assets/kiwave.png"
-    import janoslitkei_com from "$lib/assets/janoslitkei_com.png"
-	import SmallProject from "./SmallProject.svelte";
-	import { onMount } from "svelte";    
+	import ProjectCard from './ProjectCard.svelte';
+	import kiwave from '$lib/assets/kiwave.png';
+	import janoslitkei_com from '$lib/assets/janoslitkei_com.png';
+	import SmallProject from './SmallProject.svelte';
 </script>
 
-<div class="text-sm ml-24 pt-[8rem] h-screen">
-    <p class="ml-2 mr-16 -mb-3 ">I have worked on a number of projects as part of my studies, and I have done quite a few personal projects as well. Some are web-focused, while others are more general Software Engineering projects. Below are a few of the most important ones.</p>
-
-    <div class="flex flex-nowrap gap-12 py-12 pl-8 snap-x snap-mandatory snap-always overflow-x-auto hide-scroll-bar">
-        <div class=" snap-start scroll-ml-8">
-            <ProjectCard img={janoslitkei_com} title="janoslitkei.com" desc="My personal portfolio and website, the one you're currently looking at." github="https://github.com/jnsltk/janoslitkei.com" link="https://janoslitkei.com" tech={["Svelte", "HTML", "CSS", "Tailwind", "Javascript"]} />
-        </div>
-        <div class=" snap-start scroll-ml-8">
-            <ProjectCard img={kiwave} title="KiWave Sonar System" desc="An ultrasonic sonar based monitoring system for a university project." github="https://github.com/jnsltk/kiwave-sonar-system" tech={["Svelte","HTML", "CSS", "JavaScript"]}/>
-        </div>
-        <div class=" snap-start scroll-ml-8">
-            <SmallProject content={[
-                {
-                    title: "Snakegame",
-                    desc: "A simple snake game created in Java and JavaFX for a university project.",
-                    github: "https://github.com/jnsltk/snakegame"
-                },
-                {
-                    title: "szotar_net",
-                    desc: "Terminal-based client for the best Chinese-Hungarian dictionary written in Python",
-                    github: "https://github.com/jnsltk/szotar_net"
-                },
-                {
-                    title: "youdao",
-                    desc: "Yet another youdao Chinese dictionary client for the terminal, written in Go",
-                    github: "https://github.com/jnsltk/youdao"
-                },
-            ]} />
-        </div>
-    </div>        
+<div class="h-[calc(100dvh)] pt-20 text-sm md:pt-32 lg:ml-80 lg:pt-24">
+	<h2 class="font-display text-2xl font-semibold md:pb-2 lg:hidden">Projects</h2>
+	<div
+		class="hide-scroll-bar -mx-4 flex snap-x snap-mandatory snap-always flex-nowrap gap-4 overflow-x-auto pb-3 pl-6 pt-6 md:-mx-8 md:gap-10 md:py-6 md:pl-8 lg:pb-12 lg:-mr-16 lg:ml-0"
+	>
+		<div class=" snap-start scroll-ml-2 md:scroll-m-8">
+			<ProjectCard
+				img={janoslitkei_com}
+				title="janoslitkei.com"
+				desc="My personal portfolio and website, the one you're currently looking at. Made with SvelteJS and SvelteKit, deployed on Vercel."
+				github="https://github.com/jnsltk/janoslitkei.com"
+				link="https://janoslitkei.com"
+				tech={['Svelte', 'HTML', 'CSS', 'Tailwind', 'Javascript']}
+			/>
+		</div>
+		<div class=" snap-start scroll-ml-2 md:scroll-m-8">
+			<ProjectCard
+				img={kiwave}
+				title="KiWave Sonar System"
+				desc="An ultrasonic sonar based monitoring system for a university project, consisting of a web-based UI and an arduino-like microcontroller."
+				github="https://github.com/jnsltk/kiwave-sonar-system"
+				tech={['Svelte', 'HTML', 'CSS', 'JavaScript']}
+			/>
+		</div>
+		<div class=" snap-start scroll-ml-2 md:scroll-m-8 md:pr-7 lg:snap-none lg:pr-44">
+			<SmallProject
+				content={[
+					{
+						title: 'Snakegame',
+						desc: "A simple snake game created using Java 17 and JavaFX for a university course called 'Mini Project: Team Programming'.",
+						github: 'https://github.com/jnsltk/snakegame'
+					},
+					{
+						title: 'szotar_net',
+						desc: 'Terminal-based client for the best Chinese-Hungarian dictionary written in Python',
+						github: 'https://github.com/jnsltk/szotar_net'
+					},
+					{
+						title: 'youdao',
+						desc: 'Yet another youdao Chinese dictionary client for the terminal, written in Go',
+						github: 'https://github.com/jnsltk/youdao'
+					}
+				]}
+			/>
+		</div>
+	</div>
+	<p class="mt-2 animate-pulse text-right text-base lg:-m-6">Scroll for more --->></p>
 </div>
 
 <style>
-    .hide-scroll-bar {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-    .hide-scroll-bar::-webkit-scrollbar {
-      display: none;
-    }
+	.hide-scroll-bar {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+	.hide-scroll-bar::-webkit-scrollbar {
+		display: none;
+	}
 </style>

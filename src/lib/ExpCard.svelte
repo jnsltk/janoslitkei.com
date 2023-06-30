@@ -1,13 +1,15 @@
 <script>
-    export let title;
-    export let content;
+	export let title;
+	export let content;
 </script>
 
-<div class="rounded-lg max-w-lg overflow-hidden shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out py-5 px-8 bg-light-bg-300/50 backdrop-blur-md">
-    <h2 class="font-semibold mb-2">{title}</h2>
-    <ul class="list-disc list-inside">
-        {#each content as point}
-            <li>{point}</li>
-        {/each}
-    </ul>
+<div
+	class="overflow-hidden whitespace-nowrap rounded-lg bg-light-bg-300/50 px-6 py-4 shadow-md backdrop-blur-md transition-all duration-300 ease-in-out md:px-8 md:py-5 lg:hover:scale-105 lg:hover:shadow-xl"
+>
+	<h2 class="mb-2 font-semibold">{title}</h2>
+	<ul class="list-inside list-disc">
+		{#each content as point}
+			<li>{point}</li>
+		{/each}
+	</ul>
 </div>
