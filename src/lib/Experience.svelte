@@ -3,7 +3,7 @@
 </script>
 
 <div class="flex flex-col justify-start pb-4 pt-20">
-	<h2 class="mb-4 font-display text-2xl font-semibold">My experience</h2>
+	<h2 class="mb-4 text-2xl font-semibold">My experience</h2>
 	<div class="hyphens-auto text-justify text-base leading-relaxed">
 		<p class="mb-6">
 			I have had experience working with many different technologies both as part of my studies at

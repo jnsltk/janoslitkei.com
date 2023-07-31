@@ -15,7 +15,6 @@ export default {
     },
     fontFamily: {
       'sans': ['Inter', 'Helvetica', 'sans-serif'],
-      'display': ['Recoleta', 'Georgia', 'serif']
     }
   },
   plugins: [

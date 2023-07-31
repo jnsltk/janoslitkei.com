@@ -6,7 +6,7 @@
 </script>
 
 <div class="pt-20">
-	<h2 class="font-display text-2xl font-semibold pb-8">Projects</h2>
+	<h2 class="text-2xl font-semibold pb-8">Projects</h2>
 	<div
 		class="hide-scroll-bar flex flex-col gap-8"
 	>

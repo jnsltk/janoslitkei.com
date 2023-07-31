@@ -2,12 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: 'Recoleta';
-    src: url('/fonts/recoleta-regular.otf');
+body {
+    background-color: #121212;
+    color: rgba(255, 255, 255, 0.68);
 }
 
-body {
-    background-color: #222222;
+h1, h2, a {
     color: rgba(255, 255, 255, 0.87);
 }

@@ -7,7 +7,7 @@
 </script>
 
 <div
-	class="flex flex-col overflow-hidden rounded-xl shadow-lg border border-white border-opacity-20 backdrop-blur-2xl bg-gradient-to-b from-[#FFFFFF66] to-[#FFFFFF1A] leading-relaxed"
+	class="flex flex-col overflow-hidden rounded-xl shadow-lg border border-white border-opacity-20 backdrop-blur-2xl bg-gradient-to-b from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0.05)] leading-relaxed"
 >
 	<div class="px-5 py-6">
 		<h1 class="text-xl font-bold mb-2">Other projects</h1>

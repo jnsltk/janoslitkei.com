@@ -2,14 +2,13 @@
 	import Icon from 'svelte-icons-pack';
 	import HiSolidExternalLink from 'svelte-icons-pack/hi/HiSolidExternalLink';
 	import jan from '$lib/assets/jan.png';
-	import arrow from '$lib/assets/arrow.svg';
 </script>
 
 <div
 	class=" flex flex-col pb-8 pt-20"
 >
-	<h2 class="mb-6 relsticky ative font-display text-2xl font-semibold">About me</h2>
-	<div class="w-full rounded-xl shadow-lg border border-white border-opacity-20 backdrop-blur-2xl bg-gradient-to-b from-[#FFFFFF66] to-[#FFFFFF1A] overflow-hidden">
+	<h2 class="mb-6 text-2xl font-semibold">About me</h2>
+	<div class="w-full rounded-xl pt-4 shadow-lg border border-white border-opacity-20 backdrop-blur-2xl bg-gradient-to-b from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0.05)] overflow-hidden">
 			<img
 			class="my-8 border-2 border-white border-opacity-25 ml-auto mr-auto w-1/2 rounded-full"
 			src={jan}

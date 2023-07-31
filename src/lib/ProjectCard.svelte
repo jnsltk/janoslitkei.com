@@ -14,7 +14,7 @@
 </script>
 
 <div
-	class="flex flex-col overflow-hidden rounded-xl shadow-lg border border-white border-opacity-20 backdrop-blur-2xl bg-gradient-to-b from-[#FFFFFF66] to-[#FFFFFF1A] leading-relaxed"
+	class="flex flex-col overflow-hidden rounded-xl shadow-lg border border-white border-opacity-20 backdrop-blur-2xl bg-gradient-to-b from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0.05)] leading-relaxed"
 >
 	<a href={link}><img src={img} alt={desc} class="w-full" /></a>
 	<div class="px-5 py-6">
@@ -34,7 +34,7 @@
 		</div>
 		{#each tech as t}
 			<span
-				class="mb-2 mr-1 inline-block rounded-full bg-accent-orange bg-opacity-50 px-4 py-1 text-sm"
+				class="mb-2 mr-1 inline-block rounded-full bg-slate-800 bg-opacity-30 px-4 py-1 text-sm"
 				>{t}</span
 			>
 		{/each}

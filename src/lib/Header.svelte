@@ -14,9 +14,9 @@
 			class="border-black hover:border-b-4"
 			href="#home"
 		>
-			<h1 class="mb-4 font-display font-semibold text-5xl">Janos Litkei</h1>
+			<h1 class="mb-4 font-bold text-4xl">Janos Litkei</h1>
 		</a>
-		<p class="text-lg">I like to code and build things for the web.</p>
+		<h2 class="text-lg font-medium">I like to code and build things for the web.</h2>
 		<div class="flex gap-4 mt-6">
 			<a href="https://github.com/jnsltk" target="_blank"
 				><Icon src={AiFillGithub} size="1.65em" color="#fafafa"/></a
