@@ -1,8 +1,4 @@
-<script>
-	import blobs from '$lib/assets/blobs.svg';
-</script>
-
-<div class="fixed -z-20 h-[calc(100dvh)] w-screen">
+<div class="fixed -z-20 h-screen w-screen">
 	<svg class="absolute -bottom-10 left-1/2 w-[600px] -translate-x-[48%]" width="655" height="685" viewBox="0 0 655 685" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<g filter="url(#filter0_f_3_26)">
 		<circle cx="325.905" cy="325.905" r="225.5" transform="rotate(-45 325.905 325.905)" fill="url(#paint0_linear_3_26)"/>
@@ -45,7 +41,7 @@
 		</svg>		
 </div>
 
-<div class="bg fixed -z-10 h-[calc(100dvh)] w-screen" />
+<div class="bg fixed -z-10 h-screen w-screen" />
 
 <style>
 	.bg {

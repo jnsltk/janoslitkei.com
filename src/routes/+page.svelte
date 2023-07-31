@@ -16,4 +16,7 @@
 	<About />
 	<Experience />
 	<Projects />
+	<div class="my-16 leading-relaxed text-opacity-25 text-sm">
+		Loosely designed in Figma, coded in Visual Studio Code. Built using SvelteKit and Tailwind CSS, deployed on Vercel. 
+	</div>
 </div>

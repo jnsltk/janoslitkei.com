@@ -2,16 +2,16 @@
 	import ExpCard from './ExpCard.svelte';
 </script>
 
-<div class="flex h-[calc(100dvh)] flex-col justify-start pb-4 pt-20 md:pt-32 lg:ml-80">
-	<h2 class="mb-3 font-display text-2xl font-semibold lg:hidden">My experience</h2>
-	<div class="hyphens-auto text-justify text-base leading-relaxed lg:max-w-screen-md lg:hyphens-none lg:text-left">
-		<p class="mb-2 md:mb-4">
+<div class="flex flex-col justify-start pb-4 pt-20">
+	<h2 class="mb-4 font-display text-2xl font-semibold">My experience</h2>
+	<div class="hyphens-auto text-justify text-base leading-relaxed">
+		<p class="mb-6">
 			I have had experience working with many different technologies both as part of my studies at
 			university and through my personal projects. I'm always looking to learn new things!
 		</p>
 	</div>
 	<div
-		class=" hide-scroll-bar -mx-4 flex snap-x snap-mandatory snap-always flex-nowrap gap-5 overflow-x-auto px-4 pb-6 pt-4 md:mb-2 md:flex-wrap md:gap-8 lg:px-8 lg:pb-10"
+		class="hide-scroll-bar -mx-4 flex snap-x snap-mandatory snap-always flex-nowrap gap-5 overflow-x-auto px-4 pb-8 pt-4"
 	>
 		<div class="snap-start scroll-m-4">
 			<ExpCard

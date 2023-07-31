@@ -1,21 +1,38 @@
 <script>
-	export let container;
-	export let sections;
+	import Icon from 'svelte-icons-pack/Icon.svelte';
+	import AiFillGithub from 'svelte-icons-pack/ai/AiFillGithub';
+	import AiFillLinkedin from 'svelte-icons-pack/ai/AiFillLinkedin';
+	import AiFillInstagram from 'svelte-icons-pack/ai/AiFillInstagram';
+	import IoMailOpen from 'svelte-icons-pack/io/IoMailOpen';
 </script>
 
 <div
-	class="fixed left-0 right-0 top-0 z-20 flex justify-between px-4 pt-4 md:px-14 lg:px-16 lg:pt-12"
+	class="left-0 right-0 top-0 z-20 flex justify-between px-4 pt-12"
 >
-	<div class="">
+	<div>
 		<a
-			on:click={container.scrollTo({ top: sections.heroSection, behavior: 'smooth' })}
 			class="border-black hover:border-b-4"
 			href="#home"
 		>
-			<h1 class="mb-4 font-display text-4xl">Janos Litkei</h1>
+			<h1 class="mb-4 font-display font-semibold text-5xl">Janos Litkei</h1>
 		</a>
+		<p class="text-lg">I like to code and build things for the web.</p>
+		<div class="flex gap-4 mt-6">
+			<a href="https://github.com/jnsltk" target="_blank"
+				><Icon src={AiFillGithub} size="1.65em" color="#fafafa"/></a
+			>
+			<a href="https://www.linkedin.com/in/janoslitkei/" target="_blank"
+				><Icon src={AiFillLinkedin} size="1.65em" color="#fafafa"/></a
+			>
+			<a href="https://instagram.com/janoslitkei" target="_blank"
+				><Icon src={AiFillInstagram} size="1.65em" color="#fafafa"/></a
+			>
+			<a href="mailto:janos.litkei@gmail.com"><Icon src={IoMailOpen} size="1.65em" color="#fafafa"/></a>
+		</div>
 	</div>
-	<nav class="hidden lg:block">
+
+	<!-- Deal with nav later -->
+	<!-- <nav class="hidden">
 		<ul class=" mt-2 flex gap-10 text-base font-semibold">
 			<li>
 				<a
@@ -53,5 +70,5 @@
 				>
 			</li>
 		</ul>
-	</nav>
+	</nav> -->
 </div>
