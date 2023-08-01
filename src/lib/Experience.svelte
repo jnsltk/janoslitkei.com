@@ -3,8 +3,8 @@
 </script>
 
 <div class="flex flex-col justify-start pb-4 pt-20">
-	<h2 class="mb-4 text-2xl font-semibold">My experience</h2>
-	<div class="hyphens-auto text-justify text-base leading-relaxed">
+	<h2 class="mb-4 text-2xl font-semibold text-emphasis">My experience</h2>
+	<div class="text-base leading-relaxed">
 		<p class="mb-6">
 			I have had experience working with many different technologies both as part of my studies at
 			university and through my personal projects. I'm always looking to learn new things!
@@ -40,9 +40,10 @@
 			/>
 		</div>
 	</div>
-	<div class="hyphens-auto text-justify text-base leading-relaxed">
+	<div class="text-base leading-relaxed">
 		<p class="mb-2">
-			I'm also fluent in 3 languages, namely English, Hungarian and Mandarin Chinese.
+			I also have a BA degree in Chinese Language and Culture, and I'm fluent in three languages
+			(English, Hungarian and Mandarin Chinese).
 		</p>
 	</div>
 </div>

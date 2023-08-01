@@ -6,28 +6,25 @@
 	import IoMailOpen from 'svelte-icons-pack/io/IoMailOpen';
 </script>
 
-<div
-	class="left-0 right-0 top-0 z-20 flex justify-between px-4 pt-12"
->
+<div class="left-0 right-0 top-0 z-20 flex justify-between px-4 pt-12">
 	<div>
-		<a
-			class="border-black hover:border-b-4"
-			href="#home"
-		>
-			<h1 class="mb-4 font-bold text-4xl">Janos Litkei</h1>
+		<a class="border-black hover:border-b-4" href="#home">
+			<h1 class="mb-4 text-4xl font-bold text-emphasis">Janos Litkei</h1>
 		</a>
-		<h2 class="text-lg font-medium">I like to code and build things for the web.</h2>
-		<div class="flex gap-4 mt-6">
+		<h2 class="text-lg font-medium text-emphasis">I like to code and build things for the web.</h2>
+		<div class="mt-6 flex gap-4">
 			<a href="https://github.com/jnsltk" target="_blank"
-				><Icon src={AiFillGithub} size="1.65em" color="#fafafa"/></a
+				><Icon src={AiFillGithub} size="1.65em" color="rgba(255, 255, 255, 0.68)"/></a
 			>
 			<a href="https://www.linkedin.com/in/janoslitkei/" target="_blank"
-				><Icon src={AiFillLinkedin} size="1.65em" color="#fafafa"/></a
+				><Icon src={AiFillLinkedin} size="1.65em" color="rgba(255, 255, 255, 0.68)" /></a
 			>
 			<a href="https://instagram.com/janoslitkei" target="_blank"
-				><Icon src={AiFillInstagram} size="1.65em" color="#fafafa"/></a
+				><Icon src={AiFillInstagram} size="1.65em" color="rgba(255, 255, 255, 0.68)" /></a
 			>
-			<a href="mailto:janos.litkei@gmail.com"><Icon src={IoMailOpen} size="1.65em" color="#fafafa"/></a>
+			<a href="mailto:janos.litkei@gmail.com"
+				><Icon src={IoMailOpen} size="1.65em" color="rgba(255, 255, 255, 0.68)" /></a
+			>
 		</div>
 	</div>
 

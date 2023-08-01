@@ -4,9 +4,9 @@
 </script>
 
 <div
-	class="overflow-hidden whitespace-nowrap rounded-xl shadow-lg border border-white border-opacity-20 backdrop-blur-2xl bg-gradient-to-b from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0.05)] px-5 py-6 leading-relaxed"
+	class="overflow-hidden whitespace-nowrap rounded-xl border border-white border-opacity-20 bg-gradient-to-b from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0.05)] px-5 py-6 leading-relaxed shadow-lg backdrop-blur-2xl"
 >
-	<h2 class="mb-2 font-semibold">{title}</h2>
+	<h2 class="mb-2 font-semibold text-emphasis">{title}</h2>
 	<ul class="list-inside list-disc">
 		{#each content as point}
 			<li>{point}</li>

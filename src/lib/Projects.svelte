@@ -6,10 +6,8 @@
 </script>
 
 <div class="pt-20">
-	<h2 class="text-2xl font-semibold pb-8">Projects</h2>
-	<div
-		class="hide-scroll-bar flex flex-col gap-8"
-	>
+	<h2 class="pb-8 text-2xl font-semibold text-emphasis">Projects</h2>
+	<div class="hide-scroll-bar flex flex-col gap-8">
 		<ProjectCard
 			img={janoslitkei_com}
 			title="janoslitkei.com"

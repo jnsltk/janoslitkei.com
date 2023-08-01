@@ -4,22 +4,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        'light-bg-100': '#f5f1e8',
-        'light-bg-300': '#EEE7D8',
-        'light-bg-500': '#beb9ad',
-        'light-bg-700': '#5f5c56',
-        'accent-orange': '#F23D24',
-        'accent-purple': '#271467',
-        'smoky-black': '#181511'
+        'emphasis': 'rgba(255, 255, 255, 0.87)',
+        'normal': 'rgba(255, 255, 255, 0.68)',
+        'accent': '#C8BBF2',
+        'dark': 'rgb(18, 18, 18)',
       },
     },
     fontFamily: {
       'sans': ['Inter', 'Helvetica', 'sans-serif'],
     }
   },
-  plugins: [
-    require('tailwindcss-animated')
-  ],
 }
 
 
