@@ -4,13 +4,13 @@
 	import jan from '$lib/assets/jan.png';
 </script>
 
-<div class=" flex flex-col pb-8 pt-20">
-	<h2 class="mb-6 text-2xl font-semibold text-emphasis">About me</h2>
+<section id="about" class=" flex flex-col pb-8 py-24">
+	<h2 class="mb-6 text-2xl font-semibold text-emphasis lg:sr-only">About me</h2>
 	<div
-		class="w-full overflow-hidden rounded-xl border border-white border-opacity-20 bg-gradient-to-b from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0.05)] px-6 py-8 text-base leading-relaxed shadow-lg backdrop-blur-2xl md:px-8"
+		class="w-full overflow-hidden rounded-xl border border-white border-opacity-20 bg-gradient-to-b from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0.05)] px-6 py-8 text-base leading-relaxed shadow-lg backdrop-blur-2xl md:px-8 lg:py-6"
 	>
 		<img
-			class="mb-8 ml-auto mr-auto mt-2 w-1/2 rounded-full border-2 border-white border-opacity-25 md:float-left md:my-2 md:mb-2 md:mr-6 md:w-1/4"
+			class="mb-8 ml-auto mr-auto mt-2 w-1/2 rounded-full border-4 border-white border-opacity-25 md:w-1/3 lg:w-[38%] lg:mt-6"
 			src={jan}
 			alt="Me, Janos Litkei"
 		/>
@@ -51,4 +51,4 @@
 			</p>
 		</div>
 	</div>
-</div>
+</section>
