@@ -8,7 +8,7 @@
 <div
 	class="flex flex-col overflow-hidden rounded-xl border border-white border-opacity-20 bg-gradient-to-b from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0.05)] leading-relaxed shadow-lg backdrop-blur-2xl"
 >
-	<div class="px-5 py-6">
+	<div class="px-5 py-6 md:px-10 md:py-8">
 		<h1 class="mb-2 text-xl font-bold text-emphasis">Other projects</h1>
 		<p class="mb-8">
 			Some other personal and university projects I've worked on that are worth mentioning.

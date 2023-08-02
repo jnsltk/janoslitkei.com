@@ -11,21 +11,21 @@
 		</p>
 	</div>
 	<div
-		class="hide-scroll-bar -mx-4 flex snap-x snap-mandatory snap-always flex-nowrap gap-5 overflow-x-auto px-4 pb-8 pt-4"
+		class="hide-scroll-bar -mx-4 flex snap-x snap-mandatory snap-always flex-nowrap gap-5 overflow-x-auto px-4 pb-8 pt-4 md:-mx-12 md:px-12 md:gap-82"
 	>
-		<div class="snap-start scroll-m-4">
+		<div class="snap-start scroll-m-4 md:scroll-m-12">
 			<ExpCard
 				title="Backend Development"
 				content={['Java', 'Spring Boot', 'Python', 'NodeJS', 'SQL', 'MongoDB', 'Docker']}
 			/>
 		</div>
-		<div class="snap-start scroll-m-4">
+		<div class="snap-start scroll-m-4 md:scroll-m-12">
 			<ExpCard
 				title="Frontend Development"
 				content={['HTML', 'CSS', 'Tailwind CSS', 'JavaScript', 'SvelteJS', 'React', 'VueJS']}
 			/>
 		</div>
-		<div class="snap-start scroll-m-4 pr-16">
+		<div class="snap-start scroll-m-4 pr-16 md:scroll-m-12 md:pr-64">
 			<ExpCard
 				title="Other areas of expertise"
 				content={[

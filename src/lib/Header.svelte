@@ -6,12 +6,12 @@
 	import IoMailOpen from 'svelte-icons-pack/io/IoMailOpen';
 </script>
 
-<div class="left-0 right-0 top-0 z-20 flex justify-between px-4 pt-12">
+<div class="left-0 right-0 top-0 z-20 flex justify-between px-4 pt-12 md:px-12 md:pt-20">
 	<div>
 		<a class="border-black hover:border-b-4" href="#home">
-			<h1 class="mb-4 text-4xl font-bold text-emphasis">Janos Litkei</h1>
+			<h1 class="mb-4 text-4xl font-bold text-emphasis md:text-5xl">Janos Litkei</h1>
 		</a>
-		<h2 class="text-lg font-medium text-emphasis">I like to code and build things for the web.</h2>
+		<h2 class="text-lg font-medium text-emphasis md:text-xl">I like to code and build things for the web.</h2>
 		<div class="mt-6 flex gap-4">
 			<a href="https://github.com/jnsltk" target="_blank"
 				><Icon src={AiFillGithub} size="1.65em" color="rgba(255, 255, 255, 0.68)"/></a

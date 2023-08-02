@@ -1,8 +1,6 @@
-<div class="fixed -z-20 h-screen w-screen">
+<div class="fixed left-0 right-0 top-0 -z-20 h-screen w-screen overflow-hidden">
 	<svg
-		class="absolute -bottom-10 left-1/2 w-[600px] -translate-x-[48%]"
-		width="655"
-		height="685"
+		class="absolute -bottom-10 left-1/2 w-[600px] -translate-x-[50%] md:bottom-16 md:w-[920px]"
 		viewBox="0 0 655 685"
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"
