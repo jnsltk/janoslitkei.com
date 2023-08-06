@@ -1,7 +1,6 @@
 <script>
 	import Icon from 'svelte-icons-pack';
-	import HiSolidExternalLink from 'svelte-icons-pack/hi/HiSolidExternalLink';
-	import AiFillGithub from 'svelte-icons-pack/ai/AiFillGithub';
+	import FiExternalLink from "svelte-icons-pack/fi/FiExternalLink";
 
 	export let img;
 	export let title;
@@ -14,32 +13,25 @@
 </script>
 
 <div
-	class=" z-50 flex h-[27rem] w-[96vw] flex-col overflow-hidden rounded-xl bg-light-bg-300/50 shadow-md backdrop-blur-md transition-all duration-300 ease-in-out md:h-[42rem] md:w-[92vw] lg:h-[31rem] lg:w-[30vw] lg:hover:scale-105 lg:hover:shadow-xl"
+	class="flex flex-col overflow-hidden rounded-xl border border-white border-opacity-20 bg-gradient-to-b from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0.05)] leading-relaxed shadow-lg backdrop-blur-2xl"
 >
 	<a href={link}><img src={img} alt={desc} class="w-full" /></a>
-	<div class="px-6 py-4 md:px-8 md:py-6">
-		<div class="mb-2 text-base font-semibold"><a href={link}>{title}</a></div>
-		<p class="text-sm">{desc}</p>
+	<div class="px-5 py-6 md:px-10 md:py-8">
+		<div class="mb-2 text-xl font-semibold text-emphasis hover:text-accent focus-visible:text-accent"><a href={link}>{title}</a></div>
+		<p>{desc}</p>
 	</div>
-	<div class="mt-auto px-6 pb-4 md:px-8 md:pb-6">
-		<div class="mb-3">
-			<a class="-ml-0.5 text-sm font-semibold underline" href={github} target="_blank"
-				><Icon
-					src={AiFillGithub}
-					className="inline mr-1.5 mb-0.5"
-					size="1.5em"
-					color="black"
-				/>Check it out on github!<Icon
-					src={HiSolidExternalLink}
+	<div class="mt-auto px-5 pb-6 md:px-10 md:pb-8">
+		<div class="mb-6">
+			<a class="-ml-0.5 font-semibold text-emphasis hover:text-accent focus-visible:text-accent" href={github} target="_blank"
+				>Check it out on github!<Icon
+					src={FiExternalLink}
 					className="inline ml-1 mb-1"
-					size="1.25em"
-					color="black"
+					size="1em"
 				/></a
 			>
 		</div>
 		{#each tech as t}
-			<span
-				class="font-base mb-2 mr-1 inline-block rounded-full bg-accent-orange px-2 py-1 text-xs text-gray-50"
+			<span class="mb-2 mr-1 inline-block rounded-full bg-slate-800 bg-opacity-30 px-4 py-1 text-sm md:mr-2"
 				>{t}</span
 			>
 		{/each}

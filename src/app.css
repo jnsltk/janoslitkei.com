@@ -1,13 +1,9 @@
 @tailwind base;
+@layer base {
+    html {
+        @apply text-normal;
+        @apply bg-dark;        
+    }
+}
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-    font-family: 'Recoleta';
-    src: url('/fonts/recoleta-regular.otf');
-}
-
-body {
-    background-color: #EEE7D8;
-    color: #181511;
-}

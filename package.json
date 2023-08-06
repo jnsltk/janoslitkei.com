@@ -27,6 +27,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/inter": "^5.0.2",
+		"preline": "^1.9.0",
 		"svelte-canvas": "^0.9.3",
 		"svelte-icons-pack": "^2.1.0",
 		"svelte-transition": "^0.0.8",

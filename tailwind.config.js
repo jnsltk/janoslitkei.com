@@ -1,26 +1,26 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
+  content: [
+    './src/**/*.{html,js,svelte,ts}',
+    'node_modules/preline/dist/*.js',
+  ],
+  plugins: [
+    require('preline/plugin'),
+  ],
   theme: {
     extend: {
       colors: {
-        'light-bg-100': '#f5f1e8',
-        'light-bg-300': '#EEE7D8',
-        'light-bg-500': '#beb9ad',
-        'light-bg-700': '#5f5c56',
-        'accent-orange': '#F23D24',
-        'accent-purple': '#271467',
-        'smoky-black': '#181511'
+        'emphasis': 'rgba(255, 255, 255, 0.87)',
+        'normal': 'rgba(255, 255, 255, 0.71)',
+        'accent': 'white',
+        'dark': 'rgb(18, 18, 18)',
       },
     },
     fontFamily: {
       'sans': ['Inter', 'Helvetica', 'sans-serif'],
-      'display': ['Recoleta', 'Georgia', 'serif']
     }
   },
-  plugins: [
-    require('tailwindcss-animated')
-  ],
 }
 
 
