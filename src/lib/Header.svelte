@@ -1,9 +1,9 @@
 <script>
 	import Icon from 'svelte-icons-pack/Icon.svelte';
-	import AiFillGithub from 'svelte-icons-pack/ai/AiFillGithub';
-	import AiFillLinkedin from 'svelte-icons-pack/ai/AiFillLinkedin';
-	import AiFillInstagram from 'svelte-icons-pack/ai/AiFillInstagram';
-	import IoMailOpen from 'svelte-icons-pack/io/IoMailOpen';
+	import BsGithub from "svelte-icons-pack/bs/BsGithub";
+	import BsLinkedin from "svelte-icons-pack/bs/BsLinkedin";
+	import BsInstagram from "svelte-icons-pack/bs/BsInstagram";
+	import BsEnvelopePaperFill from "svelte-icons-pack/bs/BsEnvelopePaperFill";
 </script>
 
 <header
@@ -21,7 +21,7 @@
 			<ul class="mt-16 w-max" data-hs-scrollspy="#scrollspy">
 				<li class="my-3">
 					<a
-						class="active font-semibold text-emphasis border-accent hover:text-accent hover:border-b-4 focus-visible:text-accent focus-visible:border-b-4 hs-scrollspy-active:text-accent hs-scrollspy-active:border-b-4 transition-all"
+						class="active border-accent font-semibold text-emphasis transition-all hover:border-b-4 hover:text-accent focus-visible:border-b-4 focus-visible:text-accent hs-scrollspy-active:border-b-4 hs-scrollspy-active:text-accent"
 						href="#about"
 					>
 						About
@@ -29,7 +29,7 @@
 				</li>
 				<li class="my-3">
 					<a
-						class="font-semibold text-emphasis border-accent hover:text-accent hover:border-b-4 focus-visible:text-accent focus-visible:border-b-4 hs-scrollspy-active:text-accent hs-scrollspy-active:border-b-4 transition-all"
+						class="border-accent font-semibold text-emphasis transition-all hover:border-b-4 hover:text-accent focus-visible:border-b-4 focus-visible:text-accent hs-scrollspy-active:border-b-4 hs-scrollspy-active:text-accent"
 						href="#experience"
 					>
 						Experience
@@ -37,7 +37,7 @@
 				</li>
 				<li class="my-3">
 					<a
-						class="font-semibold text-emphasis border-accent hover:text-accent hover:border-b-4 focus-visible:text-accent focus-visible:border-b-4 hs-scrollspy-active:text-accent hs-scrollspy-active:border-b-4 transition-all"
+						class="border-accent font-semibold text-emphasis transition-all hover:border-b-4 hover:text-accent focus-visible:border-b-4 focus-visible:text-accent hs-scrollspy-active:border-b-4 hs-scrollspy-active:text-accent"
 						href="#projects"
 					>
 						Projects
@@ -47,18 +47,26 @@
 		</nav>
 	</div>
 
-	<div class="mt-6 flex gap-4" aria-label="Social media">
-		<a href="https://github.com/jnsltk" target="_blank"
-			><Icon src={AiFillGithub} size="1.65em" color="rgba(255, 255, 255, 0.68)" /></a
-		>
-		<a href="https://www.linkedin.com/in/janoslitkei/" target="_blank"
-			><Icon src={AiFillLinkedin} size="1.65em" color="rgba(255, 255, 255, 0.68)" /></a
-		>
-		<a href="https://instagram.com/janoslitkei" target="_blank"
-			><Icon src={AiFillInstagram} size="1.65em" color="rgba(255, 255, 255, 0.68)" /></a
-		>
-		<a href="mailto:janos.litkei@gmail.com"
-			><Icon src={IoMailOpen} size="1.65em" color="rgba(255, 255, 255, 0.68)" /></a
-		>
-	</div>
+	<ul class="ml-1 mt-6 flex items-center" aria-label="Social media">
+		<li class="mr-5 text-2xl ">
+			<a href="https://github.com/jnsltk" class="hover:text-accent transition-all" target="_blank">
+				<Icon src={BsGithub} className="icon" />
+			</a>
+		</li>
+		<li class="mr-5 text-2xl">
+			<a href="https://instagram.com/janoslitkei" class="hover:text-accent transition-all" target="_blank">
+				<Icon src={BsInstagram}  />
+			</a>
+		</li>
+		<li class="mr-5 text-2xl">
+			<a href="https://www.linkedin.com/in/janoslitkei/" class="hover:text-accent transition-all" target="_blank">
+				<Icon src={BsLinkedin}  />
+			</a>
+		</li>
+		<li class="mr-5 text-2xl">
+			<a href="mailto:janos.litkei@gmail.com" class="hover:text-accent transition-all">
+				<Icon src={BsEnvelopePaperFill}  />
+			</a>
+		</li>
+	</ul>
 </header>
