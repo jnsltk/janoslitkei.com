@@ -39,7 +39,7 @@
 		</div>
 		{#each tech as t}
 			<span
-				class="mb-2 mr-1 inline-block rounded-full bg-slate-800 bg-opacity-30 px-4 py-1 text-sm md:mr-2"
+				class="mb-2 mr-1 inline-block rounded-full bg-stone-950 bg-opacity-50 px-4 py-1 text-sm md:mr-2"
 				>{t}</span
 			>
 		{/each}
