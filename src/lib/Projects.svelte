@@ -5,8 +5,8 @@
 	import SmallProject from './SmallProject.svelte';
 </script>
 
-<div class="pt-20">
-	<h2 class="pb-8 text-2xl font-semibold text-emphasis">Projects</h2>
+<section id="projects" class="pt-24">
+	<h2 class="mb-10 text-2xl font-semibold text-emphasis lg:sr-only">Projects</h2>
 	<div class="hide-scroll-bar flex flex-col gap-8 md:gap-12">
 		<ProjectCard
 			img={janoslitkei_com}
@@ -43,7 +43,7 @@
 			]}
 		/>
 	</div>
-</div>
+</section>
 
 <style>
 	.hide-scroll-bar {

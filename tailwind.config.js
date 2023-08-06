@@ -1,12 +1,19 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
+  content: [
+    './src/**/*.{html,js,svelte,ts}',
+    'node_modules/preline/dist/*.js',
+  ],
+  plugins: [
+    require('preline/plugin'),
+  ],
   theme: {
     extend: {
       colors: {
         'emphasis': 'rgba(255, 255, 255, 0.87)',
-        'normal': 'rgba(255, 255, 255, 0.68)',
-        'accent': '#C8BBF2',
+        'normal': 'rgba(255, 255, 255, 0.71)',
+        'accent': 'white',
         'dark': 'rgb(18, 18, 18)',
       },
     },

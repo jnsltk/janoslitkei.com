@@ -2,8 +2,8 @@
 	import ExpCard from './ExpCard.svelte';
 </script>
 
-<div class="flex flex-col justify-start pb-4 pt-20">
-	<h2 class="mb-4 text-2xl font-semibold text-emphasis">My experience</h2>
+<section id="experience" class="flex flex-col justify-start pb-4 pt-24">
+	<h2 class="mb-6 text-2xl font-semibold text-emphasis lg:sr-only">My experience</h2>
 	<div class="text-base leading-relaxed">
 		<p class="mb-6">
 			I have had experience working with many different technologies both as part of my studies at
@@ -11,7 +11,7 @@
 		</p>
 	</div>
 	<div
-		class="hide-scroll-bar -mx-4 flex snap-x snap-mandatory snap-always flex-nowrap gap-5 overflow-x-auto px-4 pb-8 pt-4 md:-mx-12 md:px-12 md:gap-82"
+		class="hide-scroll-bar -mx-4 flex snap-x snap-mandatory snap-always flex-nowrap gap-5 overflow-x-auto px-4 pb-8 pt-4 md:-mx-12 md:gap-8 md:px-12 lg:flex-wrap"
 	>
 		<div class="snap-start scroll-m-4 md:scroll-m-12">
 			<ExpCard
@@ -46,7 +46,7 @@
 			(English, Hungarian and Mandarin Chinese).
 		</p>
 	</div>
-</div>
+</section>
 
 <style>
 	.hide-scroll-bar {

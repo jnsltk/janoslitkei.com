@@ -10,12 +10,14 @@
 <Background />
 
 <div class="mx-auto min-h-screen max-w-screen-xl px-4 py-12 md:py-20 md:px-12 lg:py-0 lg:px-24">
-	<div class="lg:flex lg:justify-between lg:gap-8">
+	<div class="lg:flex lg:justify-between lg:gap-12">
 		<Header />
 		<main id="content" class="lg:w-[61.8%]">
-			<About />
-			<Experience />
-			<Projects />
+			<div id="scrollspy">
+				<About />
+				<Experience />
+				<Projects />
+			</div>
 			<Footer />
 		</main>
 	</div>

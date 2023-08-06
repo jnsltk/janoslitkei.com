@@ -5,7 +5,7 @@
 </script>
 
 <section id="about" class=" flex flex-col pb-8 py-24">
-	<h2 class="mb-6 text-2xl font-semibold text-emphasis lg:sr-only">About me</h2>
+	<h2 class="mb-10 text-2xl font-semibold text-emphasis lg:sr-only">About me</h2>
 	<div
 		class="w-full overflow-hidden rounded-xl border border-white border-opacity-20 bg-gradient-to-b from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0.05)] px-6 py-8 text-base leading-relaxed shadow-lg backdrop-blur-2xl md:px-8 lg:py-6"
 	>
