@@ -1,6 +1,6 @@
 <div class="fixed left-0 right-0 top-0 -z-20 h-screen w-screen overflow-hidden">
 	<svg
-		class="absolute -bottom-20 left-1/2 w-[600px] -translate-x-[50%] opacity-70 md:bottom-16 md:w-[920px] lg:-bottom-24 lg:w-[950px] lg:-translate-x-[50%]"
+		class="absolute -bottom-8 left-1/2 w-[600px] -translate-x-[50%] opacity-60 md:bottom-16 md:w-[920px] lg:-bottom-32 lg:w-[950px] lg:-translate-x-[50%]"
 		viewBox="0 0 655 685"
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"
