@@ -12,8 +12,8 @@ export default {
     extend: {
       colors: {
         'emphasis': 'rgba(255, 255, 255, 0.87)',
-        'normal': 'rgba(255, 255, 255, 0.71)',
-        'accent': 'white',
+        'normal': 'rgba(255, 255, 255, 0.72)',
+        'accent': 'rgba(165,180,252, 0.9)',
         'dark': 'rgb(18, 18, 18)',
       },
     },
