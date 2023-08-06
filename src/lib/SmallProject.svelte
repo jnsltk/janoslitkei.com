@@ -6,7 +6,7 @@
 </script>
 
 <div
-	class="flex flex-col overflow-hidden rounded-xl bg-gradient-to-b from-dark/10 to-dark/40 leading-relaxed shadow-lg backdrop-blur-sm transition-all lg:hover:scale-[1.01] lg:hover:shadow-2xl"
+	class="flex flex-col overflow-hidden rounded-xl bg-gradient-to-b from-dark/10 to-dark/40 leading-relaxed shadow-lg backdrop-blur-xl transition-all lg:hover:shadow-2xl"
 >
 	<div class="px-5 py-6 md:px-10 md:py-8">
 		<h1 class="mb-2 text-xl font-bold text-emphasis">Other projects</h1>

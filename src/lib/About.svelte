@@ -7,7 +7,7 @@
 <section id="about" class="flex flex-col pb-8 py-24">
 	<h2 class="mb-10 text-2xl font-semibold text-emphasis lg:sr-only">About me</h2>
 	<div
-		class="w-full overflow-hidden rounded-xl bg-gradient-to-b from-dark/10 to-dark/40 px-6 py-8 text-base leading-relaxed shadow-lg backdrop-blur-sm md:px-8 lg:py-6 transition-all lg:hover:scale-[1.01] lg:hover:shadow-2xl"
+		class="w-full overflow-hidden rounded-xl bg-gradient-to-b from-dark/10 to-dark/40 px-6 py-8 text-base leading-relaxed shadow-lg backdrop-blur-xl md:px-8 lg:py-6 transition-all lg:hover:shadow-2xl"
 	>
 		<img
 			class="mb-8 ml-auto mr-auto mt-2 w-1/2 rounded-full border-4 border-white border-opacity-25 md:w-1/3 lg:w-[38%] lg:mt-6"
