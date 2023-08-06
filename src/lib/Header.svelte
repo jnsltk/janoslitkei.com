@@ -1,9 +1,9 @@
 <script>
 	import Icon from 'svelte-icons-pack/Icon.svelte';
-	import BsGithub from "svelte-icons-pack/bs/BsGithub";
-	import BsLinkedin from "svelte-icons-pack/bs/BsLinkedin";
-	import BsInstagram from "svelte-icons-pack/bs/BsInstagram";
-	import BsEnvelopePaperFill from "svelte-icons-pack/bs/BsEnvelopePaperFill";
+	import BsGithub from 'svelte-icons-pack/bs/BsGithub';
+	import BsLinkedin from 'svelte-icons-pack/bs/BsLinkedin';
+	import BsInstagram from 'svelte-icons-pack/bs/BsInstagram';
+	import BsEnvelopePaperFill from 'svelte-icons-pack/bs/BsEnvelopePaperFill';
 </script>
 
 <header
@@ -14,7 +14,7 @@
 			<a href="/">János Litkei</a>
 		</h1>
 		<h2 class="text-lg font-medium tracking-tight text-emphasis md:text-xl">
-			I like to code and build things for the web.
+			I like to code and build things.
 		</h2>
 
 		<nav class="nav hidden lg:block" aria-label="In-page jump links">
@@ -48,24 +48,32 @@
 	</div>
 
 	<ul class="ml-1 mt-6 flex items-center" aria-label="Social media">
-		<li class="mr-5 text-2xl ">
-			<a href="https://github.com/jnsltk" class="hover:text-accent transition-all" target="_blank">
+		<li class="mr-5 text-2xl">
+			<a href="https://github.com/jnsltk" class="transition-all hover:text-accent" target="_blank">
 				<Icon src={BsGithub} className="icon" />
 			</a>
 		</li>
 		<li class="mr-5 text-2xl">
-			<a href="https://instagram.com/janoslitkei" class="hover:text-accent transition-all" target="_blank">
-				<Icon src={BsInstagram}  />
+			<a
+				href="https://instagram.com/janoslitkei"
+				class="transition-all hover:text-accent"
+				target="_blank"
+			>
+				<Icon src={BsInstagram} />
 			</a>
 		</li>
 		<li class="mr-5 text-2xl">
-			<a href="https://www.linkedin.com/in/janoslitkei/" class="hover:text-accent transition-all" target="_blank">
-				<Icon src={BsLinkedin}  />
+			<a
+				href="https://www.linkedin.com/in/janoslitkei/"
+				class="transition-all hover:text-accent"
+				target="_blank"
+			>
+				<Icon src={BsLinkedin} />
 			</a>
 		</li>
 		<li class="mr-5 text-2xl">
-			<a href="mailto:janos.litkei@gmail.com" class="hover:text-accent transition-all">
-				<Icon src={BsEnvelopePaperFill}  />
+			<a href="mailto:janos.litkei@gmail.com" class="transition-all hover:text-accent">
+				<Icon src={BsEnvelopePaperFill} />
 			</a>
 		</li>
 	</ul>
