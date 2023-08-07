@@ -10,9 +10,10 @@ My personal website and portfolio
 
 ### In Progress
 
-- [ ] Get the design reviewed by someone else
+- [ ] Tweak the noisy background
 
 ### Done ✓
 
 - [x] Redesign the website
 - [x] Get the basics done
+- [x] Get the design reviewed by someone else

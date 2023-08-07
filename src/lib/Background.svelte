@@ -1,3 +1,4 @@
+<!-- Blobs -->
 <div class="fixed left-0 right-0 top-0 -z-20 h-screen w-screen overflow-hidden">
 	<svg
 		class="absolute -bottom-8 left-1/2 w-[600px] -translate-x-[50%] opacity-60 md:bottom-16 md:w-[920px] lg:-bottom-32 lg:w-[950px] lg:-translate-x-[50%]"
@@ -109,12 +110,13 @@
 	</svg>
 </div>
 
+<!-- Grain -->
 <div class="bg fixed -z-10 h-screen w-screen" />
 
 <style>
 	.bg {
-		background-image: url('$lib/assets/noise.svg');
-		background-size: 1000px;
+		background-image: url('$lib/assets/noise.png');
+		background-size: 500px;
 		background-repeat: repeat;
 	}
 </style>
