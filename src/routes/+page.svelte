@@ -9,14 +9,6 @@
 
 <svelte:head>
 	<title>János Litkei</title>
-
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="János Litkei" />
-	<meta
-		property="og:description"
-		content="János Litkei is a software engineering student who's passionate about coding and building software systems"
-	/>
-	<meta property="og:url" content="https://janoslitkei.com/" />
 </svelte:head>
 
 <Background />
