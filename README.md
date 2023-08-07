@@ -39,23 +39,23 @@
 
 1. Install the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
 
-  ```sh
-  nvm install
-  ```
+   ```sh
+   nvm install
+   ```
 
 2. Clone this repo
 
-  ```sh
-  git clone https://github.com/jnsltk/janoslitkei.com
-  ```
+   ```sh
+   git clone https://github.com/jnsltk/janoslitkei.com
+   ```
 
 3. Install dependencies
 
    ```sh
    npm i
    ```
-   
-5. Run development server
+
+4. Run development server
 
    ```sh
    npm run dev
