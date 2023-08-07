@@ -1,38 +1,68 @@
-# create-svelte
+<div align='center'>
+  <img src='https://github.com/jnsltk/janoslitkei.com/blob/d90a19d17e89ad70594caa74d11011d30be5176e/static/favicon/android-chrome-512x512.png?raw=true' width='100px'>
+</div>
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+<h1 align='center'>
+  janoslitkei.com
+</h1>
 
-## Creating a project
+<p align='center'>
+  My personal website and portfolio. Built using
+	<a
+		href="https://svelte.dev"
+		target="_blank">Svelte</a
+	>,
+	<a
+		href="https://kit.svelte.dev/"
+		target="_blank">SvelteKit</a
+	>
+	and
+	<a
+		href="https://tailwindcss.com/"
+		target="_blank">Tailwind CSS</a
+	>, deployed on
+	<a
+		href="https://vercel.com/"
+		target="_blank">Vercel</a
+	>.
+</p>
 
-If you're seeing this, you've probably already done this step. Congrats!
+<p align='center'>
+ <a href='https://vercel.com/jnsltk/janoslitkei-com' target='_blank'>
+   <img alt='Vercel status' src='https://vercelbadge.vercel.app/api/jnsltk/janoslitkei.com'>
+ </a>
+</p>
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+![demo](https://github.com/jnsltk/janoslitkei.com/blob/d90a19d17e89ad70594caa74d11011d30be5176e/static/images/demo.png?raw=true)
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+### 🛠 Installation and running locally
 
-## Developing
+1. Install the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+  ```sh
+  nvm install
+  ```
 
-```bash
-npm run dev
+2. Clone this repo
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+  ```sh
+  git clone https://github.com/jnsltk/janoslitkei.com
+  ```
 
-## Building
+3. Install dependencies
 
-To create a production version of your app:
+   ```sh
+   npm i
+   ```
+   
+5. Run development server
 
-```bash
-npm run build
-```
+   ```sh
+   npm run dev
+   ```
 
-You can preview the production build with `npm run preview`.
+   To expose the site on your local network run
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+   ```sh
+   npm run dev -- --host
+   ```
