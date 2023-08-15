@@ -32,9 +32,9 @@
 		target="_blank">Vercel</a
 	>.
 </div>
-<div class="my-8 text-emphasis hover:text-accent focus-visible:text-accent">
+<!--<div class="my-8 text-emphasis hover:text-accent focus-visible:text-accent">
 	<a
 		class="text-emphasis hover:text-accent focus-visible:text-accent"
 		href="https://zh.janoslitkei.com/">中文版</a
 	>
-</div>
+</div>-->
