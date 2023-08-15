@@ -31,7 +31,7 @@
 		<p class="mt-10 text-left font-semibold text-emphasis">
 			<a
 				class="hover:text-accent focus-visible:text-accent"
-				href="https://drive.google.com/file/d/1TQpehsPs22PEDoulPTd1mu4j35y_8eEo/view?usp=drive_link"
+				href="/CV.pdf"
 				target="_blank"
 				>Take a look at my CV<Icon
 					src={FiExternalLink}
